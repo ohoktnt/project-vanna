@@ -11,3 +11,14 @@ ADDITIONAL INFO REQUIRED:
 4.https://www.canva.com/templates/EAENHtBzdaA-feminine-minimalist-logo-template-with-branch-for-home-decoration/
 but with brush stokes with VN, nude accents
 5. Check social media presencse - google instagram page
+
+PREP WORK
+components:
+1. NAVBAR: logo, title, about, services, contact
+2. BANNER: sample slide photos 
+3. ABOUT: quick summary and maybe photo of herself
+4. SERVICES: MAKEUP & HAIR LIST, addtional: wedding decorations (flowers, dresses)
+5. CONTACT: hours, number, email, form for direct contact
+6. FOOTER: social media icons
+
+FREE IMAGE LINKS
