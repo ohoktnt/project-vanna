@@ -1,12 +1,13 @@
 
 import './App.css';
-import './styles/navbar.css'
 import Navbar from './components/navbar';
+import BannerSlide from './components/bannerSlide'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <BannerSlide/>
     </div>
   );
 }

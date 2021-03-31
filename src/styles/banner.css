@@ -1,0 +1,27 @@
+.banner {
+  height: 100;
+  /* border: 3px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#banner-imgs {
+  /* border: 3px solid green; */
+  height: 60rem;
+}
+
+.awssld__wrapper {
+  width: 50%;
+  /* border: 3px solid red; */
+}
+
+.awssld awssld--organic-arrows {
+  width: 50%;
+  display: flex;
+}
+
+.awssld__bullets {
+  width: 50%;
+  height: 3em;
+  z-index: 1;
+}

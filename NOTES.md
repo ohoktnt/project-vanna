@@ -22,3 +22,9 @@ components:
 6. FOOTER: social media icons
 
 FREE IMAGE LINKS
+https://www.pexels.com/photo/10-piece-black-makeup-brush-set-on-white-panel-2721977/
+
+https://www.pexels.com/photo/
+
+https://www.pexels.com/photo/white-floral-sleeveless-wedding-gown-291759/
+
