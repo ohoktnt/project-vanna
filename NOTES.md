@@ -22,3 +22,4 @@ components:
 6. FOOTER: social media icons
 
 FREE IMAGE LINKS
+https://www.pexels.com/photo/man-and-woman-kissing-2253870/
