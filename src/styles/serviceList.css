@@ -1,0 +1,13 @@
+img#display {
+  height: 200px;
+  width: 200px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+}
+
+.selectedService {
+  color: red;
+}

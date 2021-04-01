@@ -25,4 +25,6 @@
   width: 50%;
   height: 3em;
   z-index: 1;
+  flex-direction: row;
+  /* background-color: white; */
 }
