@@ -8,6 +8,11 @@ img#display {
   justify-content: center;
 }
 
-.selectedService {
+
+/* .service-item {
+
+} */
+
+.service-item.selected-service {
   color: red;
 }

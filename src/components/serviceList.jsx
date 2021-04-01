@@ -1,4 +1,4 @@
-import { useState } from 'react'; 
+import { useEffect, useState } from 'react'; 
 
 import ServiceListItem from './serviceListItem'
 
@@ -10,16 +10,21 @@ export default function ServiceList() {
   // this componenet will have state and state will dictate which phots
   // animation added to list
   const serviceList = [
-    {id: 1, name: 'Makeup & Hair', photo: 'bannerimgs/dresssample.jpg', selected: false}, 
-    {id: 2, name: 'Wedding Dress Rentals', photo: 'bannerimgs/flowersample.jpg', selected: false}, 
-    {id: 3, name: 'Wedding Decorations', photo: 'bannerimgs/makeupsample.jpg', selected: false}];
+    {id: 1, name: 'Makeup & Hair', photo: 'bannerimgs/dresssample.jpg'}, 
+    {id: 2, name: 'Wedding Dress Rentals', photo: 'bannerimgs/flowersample.jpg'}, 
+    {id: 3, name: 'Wedding Decorations', photo: 'bannerimgs/makeupsample.jpg'}];
   
   const [state, setState] = useState(serviceList)
-
+ 
+  
   const parsedServiceList = serviceList.map(service => {
-    // const cssClass = setClass(service);
-    return (<ServiceListItem service={service} onClick={setState} state={state}/>)
+    let serviceItemClass = 'service-item';
+    if(state === service) {
+      serviceItemClass += ' selected-service';
+    }
+    return (<ServiceListItem service={service} onClick={setState} className={serviceItemClass}/>)
   })
+
 
   return (
     <div>
