@@ -10,9 +10,9 @@ export default function ServiceList() {
   // this componenet will have state and state will dictate which phots
   // animation added to list
   const serviceList = [
-    {id: 1, name: 'Makeup & Hair', photo: 'bannerimgs/dresssample.jpg'}, 
-    {id: 2, name: 'Wedding Dress Rentals', photo: 'bannerimgs/flowersample.jpg'}, 
-    {id: 3, name: 'Wedding Decorations', photo: 'bannerimgs/makeupsample.jpg'}];
+    {id: 1, name: 'Makeup & Hair', photo: 'bannerimgs/dresssample.jpg', isSelected: false}, 
+    {id: 2, name: 'Wedding Dress Rentals', photo: 'bannerimgs/flowersample.jpg', isSelected: false}, 
+    {id: 3, name: 'Wedding Decorations', photo: 'bannerimgs/makeupsample.jpg', isSelected: false} ];
   
   const [state, setState] = useState(serviceList)
  
@@ -25,6 +25,12 @@ export default function ServiceList() {
     return (<ServiceListItem service={service} onClick={setState} className={serviceItemClass}/>)
   })
 
+  function selectService(service) {
+    const selectedID = service.id;
+    const newServiceList = serviceList.filter(service => service.id !== selectedID);
+    newServiceList.push(service)
+    
+  }
 
   return (
     <div>
