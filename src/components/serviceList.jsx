@@ -10,27 +10,15 @@ export default function ServiceList() {
   // this componenet will have state and state will dictate which phots
   // animation added to list
   const serviceList = [
-    {id: 1, name: 'Makeup & Hair', photo: 'bannerimgs/dresssample.jpg'}, 
-    {id: 2, name: 'Wedding Dress Rentals', photo: 'bannerimgs/flowersample.jpg'}, 
-    {id: 3, name: 'Wedding Decorations', photo: 'bannerimgs/makeupsample.jpg'}];
+    {id: 1, name: 'Makeup & Hair', photo: 'bannerimgs/dresssample.jpg', selected: false}, 
+    {id: 2, name: 'Wedding Dress Rentals', photo: 'bannerimgs/flowersample.jpg', selected: false}, 
+    {id: 3, name: 'Wedding Decorations', photo: 'bannerimgs/makeupsample.jpg', selected: false}];
   
-  const [state, setState] = useState(serviceList[0])
-
-  // make a function that sets state but also add class for styling
-
-  function setClass(service){
-    let cssClass;
-    if (service === state) {
-      cssClass = 'selectedService';
-    } else {
-      cssClass = 'serviceItem';
-    }
-    return cssClass;
-  }
+  const [state, setState] = useState(serviceList)
 
   const parsedServiceList = serviceList.map(service => {
-    const cssClass = setClass(service);
-    return (<ServiceListItem className={cssClass} service={service} onClick={setState} state={state}/>)
+    // const cssClass = setClass(service);
+    return (<ServiceListItem service={service} onClick={setState} state={state}/>)
   })
 
   return (
