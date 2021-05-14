@@ -1,17 +1,10 @@
-
 import './App.css';
-import Navbar from './components/navbar';
-import BannerSlide from './components/bannerSlide'
-import About from './components/about'
-import ServiceList from './components/serviceList'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <About />
-      <ServiceList />
-      <BannerSlide/>
+      <Navbar />
     </div>
   );
 }
