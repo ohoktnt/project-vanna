@@ -1,36 +1,60 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 function Navbar() {
   return (
     <Nav>
-      <Logo src='logoVsized.png'/>
+      <SocialIcons>
+        <Wrap>
+          <FontAwesomeIcon icon={["fab", "pinterest-p"]} />
+        </Wrap>
+        <Wrap>
+          <FontAwesomeIcon icon={["fab", "instagram"]} />
+        </Wrap>
+        <Wrap>
+          <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+        </Wrap>
+      </SocialIcons>
+      <Logo src="logoVsized.png" />
       <NavMenu>
-        <a><span>About Me</span></a>
-        <a><span>Services</span></a>
-        <a><span>Contact</span></a>
+        <a>
+          <span>About Me</span>
+        </a>
+        <a>
+          <span>Services</span>
+        </a>
+        <a>
+          <span>Contact</span>
+        </a>
       </NavMenu>
     </Nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
 
 const Nav = styled.nav`
   background-color: #808080;
+  height: 125px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+`;
 const Logo = styled.img`
+  display: flex;
+  padding-top: 10px;
+  padding-left: 50px;
   height: 200px;
-`
+`;
 
 const NavMenu = styled.div`
   display: flex;
-  flex: 1;
-  max-width: 500px;
+  // flex: 1;
+  // max-width: 500px;
+  min-width: 300px;
   justify-content: space-evenly;
   position: relative;
   margin-right: 50px;
@@ -55,7 +79,6 @@ const NavMenu = styled.div`
         transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
         transform: scaleX(0);
       }
-
     }
 
     &:hover {
@@ -65,6 +88,31 @@ const NavMenu = styled.div`
       }
     }
   }
-`
+`;
 
+const SocialIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 10px;
+`;
+
+const Wrap = styled.div`
+  // border: 1px solid white;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: font-size 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+  &:hover {
+    border: 2px solid white;
+    font-size: 1.3em;
+  }
+
+`;
 

@@ -22,6 +22,9 @@ function ImgSlider() {
       <Wrap>
         <img src='./bannerimgs/makeupsample.jpg'/>
       </Wrap>
+      <Wrap>
+        <img src='/banner-temp1.jpg'/>
+      </Wrap>
     </Carousel >
   )
 }
