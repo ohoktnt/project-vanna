@@ -92,5 +92,12 @@ const ServiceContainer = styled.div`
   ul {
     list-style-type: none;
   }
+  
+  span {
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
 
 `;
