@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 function Navbar() {
   return (
@@ -17,17 +17,25 @@ function Navbar() {
           <FontAwesomeIcon icon={["fab", "facebook-f"]} />
         </Wrap>
       </SocialIcons>
-      <Logo src="logoVsized.png" />
+      <Link to={`/`}>
+        <Logo src="logoVsized.png" />
+      </Link>
       <NavMenu>
-        <a>
-          <span>About Me</span>
-        </a>
-        <a>
-          <span>Services</span>
-        </a>
-        <a>
-          <span>Contact</span>
-        </a>
+        <Link to={`/about`}>
+          <a>
+            <span>About Me</span>
+          </a>
+        </Link>
+        <Link to={`/services`}>
+          <a>
+            <span>Services</span>
+          </a>
+        </Link>
+        <Link to={`/contact`}>
+          <a>
+            <span>Contact</span>
+          </a>
+        </Link>
       </NavMenu>
     </Nav>
   );
@@ -60,6 +68,8 @@ const NavMenu = styled.div`
   margin-right: 50px;
 
   a {
+    text-decoration: none;
+    color: inherit;
     cursor: pointer;
     letter-spacing: 1.42px;
 
@@ -113,6 +123,4 @@ const Wrap = styled.div`
     border: 2px solid white;
     font-size: 1.3em;
   }
-
 `;
-
