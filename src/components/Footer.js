@@ -38,7 +38,8 @@ function Footer() {
 export default Footer;
 
 const Container = styled.footer`
-  background: #43464b;
+  // background: #43464b;
+  background: #808080;
   height: 120px;
 
   img {
