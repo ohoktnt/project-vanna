@@ -6,19 +6,22 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import ScrollTopArrow from './components/ScrollTopArrow';
 import ScrollToTop from "./ScrollToTop";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab, faRProject } from "@fortawesome/free-brands-svg-icons";
-library.add(fab);
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faArrowAltCircleUp} from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faArrowAltCircleUp);
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ScrollTopArrow/>
       <div className="App">
         <Navbar />
         <Switch>

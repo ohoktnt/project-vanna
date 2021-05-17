@@ -73,7 +73,9 @@ const Info = styled.div`
 
 const NavLinks = styled.nav`
   display: flex;
+  flex-grow: 2;
   width: 100%;
+  padding-right: 65px;
 
   h4 {
     margin: 0 20px;
@@ -93,7 +95,8 @@ const NavLinks = styled.nav`
 
 const SocialIcons = styled.div`
   display: flex;
-  width: 100%;
+  width: 25%;
+  padding-right: 10px;
   color: white;
 `;
 
