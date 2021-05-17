@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import "../CTAArrow.scss";
 
 function Services() {
@@ -40,21 +41,23 @@ function Services() {
       </CardContainer>
       <img src="Menu.png" />
       <BookContainer>
-        <ul>
-          <li>
-            <a class="animated-arrow">
-              <span class="the-arrow -left">
-                <span class="shaft"></span>
-              </span>
-              <span class="main">
-                <span class="text">Book Appointment</span>
-                <span class="the-arrow -right">
+        <Link to={`/contact`}>
+          <ul>
+            <li>
+              <a class="animated-arrow">
+                <span class="the-arrow -left">
                   <span class="shaft"></span>
                 </span>
-              </span>
-            </a>
-          </li>
-        </ul>
+                <span class="main">
+                  <span class="text">Book Appointment</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </Link>
       </BookContainer>
     </Container>
   );
@@ -73,7 +76,6 @@ const Container = styled.div`
   }
 
   color: #0e1111;
-  
 `;
 
 const CardContainer = styled.div`

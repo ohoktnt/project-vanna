@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
@@ -21,14 +24,24 @@ function Footer() {
             <FontAwesomeIcon icon={["fab", "facebook-f"]} />
           </Wrap>
         </SocialIcons>
-        <Links>
+        <NavLinks>
           <h4>Links</h4>
+          <Link to={`/`}>
+          <a>Home</a>
+          </Link>
+          <span>•</span>
+          <Link to={`/about`}>
           <a>About Me</a>
+          </Link>
           <span>•</span>
+          <Link to={`/services`}>
           <a>Services</a>
+          </Link>
           <span>•</span>
+          <Link to={`/contact`}>
           <a>Contact</a>
-        </Links>
+          </Link>
+        </NavLinks>
       </Info>
       <p>©2021 Vannamakeup.com | Web Design + Development  by Tammy(ohoktnt) </p>
     </Container>
@@ -58,7 +71,7 @@ const Info = styled.div`
   align-items: center;
 `;
 
-const Links = styled.nav`
+const NavLinks = styled.nav`
   display: flex;
   width: 100%;
 
@@ -67,6 +80,8 @@ const Links = styled.nav`
   }
 
   a {
+    text-decoration: none;
+    color: inherit;
     margin: 0 10px;
 
     &:hover {
