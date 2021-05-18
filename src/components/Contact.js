@@ -125,8 +125,7 @@ function Contact() {
                 }
               ></textarea>
             </FormGroup>
-            <SubmitButton type="submit">
-                Send
+            <SubmitButton type="submit" value="Send">
             </SubmitButton>
           </form>
         </FormContainer>
