@@ -11,6 +11,8 @@ function Contact() {
     name: "",
     email: "",
     message: "",
+    number: null,
+    date: null,
   });
 
   function sendMessage(event) {
@@ -27,7 +29,7 @@ function Contact() {
         (result) => {
           console.log(result.text);
           toast.success("Message sucessfully sent!", {
-            position: "top-right",
+            position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -39,7 +41,7 @@ function Contact() {
         (error) => {
           console.log(error.text);
           toast.error("Error Notification!", {
-            position: toast.POSITION.TOP_CENTER,
+            position: toast.POSITION.BOTTOM_RIGHT,
           });
         }
       );
@@ -48,6 +50,8 @@ function Contact() {
       name: "",
       email: "",
       message: "",
+      number: "",
+      date: "",
     });
   }
 
@@ -62,16 +66,16 @@ function Contact() {
         </Info>
         <Social>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x"/>
+            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
           </Wrap>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "pinterest-p"]} size="2x"/>
+            <FontAwesomeIcon icon={["fab", "pinterest-p"]} size="2x" />
           </Wrap>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x"/>
+            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
           </Wrap>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} size="2x"/>
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} size="2x" />
           </Wrap>
         </Social>
       </ContactInfo>
@@ -86,6 +90,7 @@ function Contact() {
             <FormGroup>
               <label>Name</label>
               <input
+                required
                 type="text"
                 name="user_name"
                 placeholder="First and Last Name"
@@ -98,6 +103,7 @@ function Contact() {
             <FormGroup>
               <label>Email</label>
               <input
+                required
                 type="email"
                 name="user_email"
                 placeholder="Email Address"
@@ -110,18 +116,33 @@ function Contact() {
             <FormGroup>
               <label>Phone Number</label>
               <input
+                required
                 type="tel"
                 name="contact_number"
                 placeholder="Contact Number"
+                value={formArgs.number}
+                onChange={(event) =>
+                  setFormArgs({ ...formArgs, number: event.target.value })
+                }
               />
             </FormGroup>
             <FormGroup>
               <label>Event Date</label>
-              <input type="date" name="event_date" min="2021-01-01"></input>
+              <input
+                required
+                type="date"
+                name="event_date"
+                min="2021-01-01"
+                value={formArgs.date}
+                onChange={(event) => {
+                  setFormArgs({ ...formArgs, date: event.target.value });
+                }}
+              ></input>
             </FormGroup>
             <FormGroup>
               <label>Message</label>
               <textarea
+                required
                 name="message"
                 placeholder="Addiontional information"
                 value={formArgs.message}
@@ -152,7 +173,7 @@ const Container = styled.div`
     margin: 0;
     font-size: 1em;
   }
-  
+
   h3 {
     padding-top: 20px;
   }
@@ -176,22 +197,22 @@ const Social = styled.div`
 `;
 
 const Wrap = styled.div`
-border: 1px solid white;
-border-radius: 5px;
-width: 32px;
-height: 32px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 0px 5px;
-cursor: pointer;
-transition: font-size 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: font-size 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
-
-&:hover {
-  border: 2px solid white;
-  font-size: 1.3em;
-}`;
+  &:hover {
+    border: 2px solid white;
+    font-size: 1.3em;
+  }
+`;
 
 const FormSection = styled.div`
   p {
