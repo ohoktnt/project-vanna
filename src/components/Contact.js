@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 
@@ -60,16 +62,16 @@ function Contact() {
         </Info>
         <Social>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
+            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x"/>
           </Wrap>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "pinterest-p"]} />
+            <FontAwesomeIcon icon={["fab", "pinterest-p"]} size="2x"/>
           </Wrap>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
+            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x"/>
           </Wrap>
           <Wrap>
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} size="2x"/>
           </Wrap>
         </Social>
       </ContactInfo>
@@ -98,7 +100,7 @@ function Contact() {
               <input
                 type="email"
                 name="user_email"
-                placeholder='Email Address'
+                placeholder="Email Address"
                 value={formArgs.email}
                 onChange={(event) =>
                   setFormArgs({ ...formArgs, email: event.target.value })
@@ -107,8 +109,11 @@ function Contact() {
             </FormGroup>
             <FormGroup>
               <label>Phone Number</label>
-              <input type="tel" name="contact_number" 
-              placeholder="Contact Number"/>
+              <input
+                type="tel"
+                name="contact_number"
+                placeholder="Contact Number"
+              />
             </FormGroup>
             <FormGroup>
               <label>Event Date</label>
@@ -126,6 +131,8 @@ function Contact() {
               ></textarea>
             </FormGroup>
             <SubmitButton type="submit" value="Send">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span>Send</span>
             </SubmitButton>
           </form>
         </FormContainer>
@@ -139,12 +146,24 @@ export default Contact;
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 50px;
+
+  h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  h3 {
+    padding-top: 20px;
+  }
 `;
 
 const ContactInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 70%;
+  margin: 0px auto;
 `;
 
 const Info = styled.div`
@@ -156,16 +175,30 @@ const Social = styled.div`
   display: flex;
 `;
 
-const Wrap = styled.div``;
+const Wrap = styled.div`
+border: 1px solid white;
+border-radius: 5px;
+width: 32px;
+height: 32px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0px 5px;
+cursor: pointer;
+transition: font-size 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+
+&:hover {
+  border: 2px solid white;
+  font-size: 1.3em;
+}`;
 
 const FormSection = styled.div`
-
-p {
+  p {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
   }
-
 `;
 
 const FormContainer = styled.div`
@@ -178,11 +211,10 @@ const FormGroup = styled.div`
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  
+
   label {
     text-align: left;
     padding: 5px;
-
   }
 
   input {
@@ -190,11 +222,15 @@ const FormGroup = styled.div`
     margin: 5px 0;
     border: 0;
     border-radius: 10px;
-    box-shadow:0 0 0px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.06);
 
     &:focus {
       outline: thick double #808080;
       outline-radius: 10px;
+    }
+
+    ::placeholder {
+      padding-left: 2px;
     }
   }
 
@@ -204,7 +240,7 @@ const FormGroup = styled.div`
     margin: 5px 0;
     border: 0;
     border-radius: 10px;
-    box-shadow:0 0 0px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.06);
 
     &:focus {
       outline: thick double #808080;
@@ -212,14 +248,35 @@ const FormGroup = styled.div`
     }
 
     ::placeholder {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+      padding-left: 2px;
     }
   }
 `;
 
-const SubmitButton = styled.input`
-  padding: 10px 10px;
-  margin: 10px;
+const SubmitButton = styled.button`
+margin: 10px;
+padding: 12px 14px;
+border-radius 4px;
+font-size: 1em;
+letter-spacing: 1.2px;
+cursor: pointer;
+background: rgba(0, 0, 0, 0.3);
+border: 1px solid rgb(249, 249, 249);
+color: rgb(249, 249, 249);
+transform-origin: left center;
+transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+&:hover {
+  background: rgb(0,0,0)
+  // border: 1px solid black;
+  // background: white;
+  // color: black;
+}
+
+span {
+  margin: 5px;
+}
 `;

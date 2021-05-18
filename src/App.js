@@ -19,8 +19,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
-library.add(fab, faArrowAltCircleUp);
+import { faArrowAltCircleUp,  faEnvelope } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, faArrowAltCircleUp, faEnvelope);
 
 function App() {
   return (
