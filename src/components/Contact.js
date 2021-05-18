@@ -61,8 +61,8 @@ function Contact() {
       <ContactInfo>
         <Info>
           <h2>Vanna Makeup Artistry</h2>
-          <a>info@vannamakeup.com</a>
-          <a>416-123-4567</a>
+          <a href="mailto:info@vannamakeup.com">info@vannamakeup.com</a>
+          <a href="tel:+4161234567">416-123-4567</a>
         </Info>
         <Social>
           <Wrap>
@@ -185,6 +185,11 @@ const ContactInfo = styled.div`
   justify-content: space-around;
   width: 70%;
   margin: 0px auto;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 const Info = styled.div`
