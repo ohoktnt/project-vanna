@@ -44,7 +44,8 @@ function Navbar() {
 export default Navbar;
 
 const Nav = styled.nav`
-  background-color: #808080;
+  // background-color: #808080;
+  background-color: black;
   height: 125px;
   color: white;
   display: flex;

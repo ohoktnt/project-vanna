@@ -52,7 +52,7 @@ export default Footer;
 
 const Container = styled.footer`
   // background: #43464b;
-  background: #808080;
+  background: black;
   height: 120px;
 
   img {
@@ -76,6 +76,7 @@ const NavLinks = styled.nav`
   flex-grow: 2;
   width: 100%;
   padding-right: 65px;
+  color: white;
 
   h4 {
     margin: 0 20px;
@@ -88,7 +89,7 @@ const NavLinks = styled.nav`
 
     &:hover {
       cursor: pointer;
-      color: white;
+      color: #808080;
     }
   }
 `;
