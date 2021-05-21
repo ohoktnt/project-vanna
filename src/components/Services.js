@@ -19,11 +19,11 @@ function Services() {
           <img src="/bannerimgs/makeupsample.jpg" />
         </Card>
         <Card>
-          <h3>Wedding Dress Rentals</h3>
+          <h3>Dress Rentals</h3>
           <ul>
-            <li>Dress A</li>
-            <li>Dress B</li>
-            <li>Dress C</li>
+            <li>Wedding Dress</li>
+            <li>Party Dress</li>
+            <li>Evening Gowns</li>
             <li>Adjustments Included</li>
           </ul>
           <img src="/bannerimgs/dresssample.jpg" />
@@ -33,7 +33,7 @@ function Services() {
           <ul>
             <li>Balloons</li>
             <li>Flowers</li>
-            <li>Banners</li>
+            <li>Backdrops</li>
             <li>Lighting</li>
           </ul>
           <img src="/bannerimgs/flowersample.jpg" />

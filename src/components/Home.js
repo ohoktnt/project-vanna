@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Form from './Form';
+import ServiceItems from './ServiceItems'
 
 import ImgSlider from "./ImgSlider";
 import { Link } from "react-router-dom";
@@ -25,6 +26,7 @@ function Home() {
           <AboutButton>Learn about Vanna</AboutButton>
         </Link>
       </AboutContainer>
+      <ServiceItems/>
       <ServiceContainer>
         <Link to={`/services`}>
           <ul>
