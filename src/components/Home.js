@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Form from './Form';
+
 import ImgSlider from "./ImgSlider";
 import { Link } from "react-router-dom";
 
@@ -42,6 +44,7 @@ function Home() {
           </ul>
         </Link>
       </ServiceContainer>
+      <Form />
     </Container>
   );
 }

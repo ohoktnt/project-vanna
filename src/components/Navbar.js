@@ -9,12 +9,12 @@ function Navbar() {
       <SocialIcons>
           <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
         <Wrap>
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
+            <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
         </Wrap>
           </a>
           <a href="https://www.facebook.com/van.nguyen.796569" target="_blank">
         <Wrap>
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} size="lg"/>
         </Wrap>
           </a>
       </SocialIcons>
