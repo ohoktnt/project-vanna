@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,39 +11,37 @@ function Footer() {
       <Info>
         <img src="/logoVsized.png" />
         <SocialIcons>
-          <Wrap>
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
-          </Wrap>
-          <Wrap>
-            <FontAwesomeIcon icon={["fab", "pinterest-p"]} />
-          </Wrap>
-          <Wrap>
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
-          </Wrap>
-          <Wrap>
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} />
-          </Wrap>
+          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
+            <Wrap>
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
+            </Wrap>
+          </a>
+          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank">
+            <Wrap>
+              <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+            </Wrap>
+          </a>
         </SocialIcons>
         <NavLinks>
           <h4>Links</h4>
           <Link to={`/`}>
-          <a>Home</a>
+            <a>Home</a>
           </Link>
           <span>•</span>
           <Link to={`/about`}>
-          <a>About Me</a>
+            <a>About Me</a>
           </Link>
           <span>•</span>
           <Link to={`/services`}>
-          <a>Services</a>
+            <a>Services</a>
           </Link>
           <span>•</span>
           <Link to={`/contact`}>
-          <a>Contact</a>
+            <a>Contact</a>
           </Link>
         </NavLinks>
       </Info>
-      <p>©2021 Vannamakeup.com | Web Design + Development  by Tammy(ohoktnt) </p>
+      <p>©2021 Vannamakeup.com | Web Design + Development by Tammy(ohoktnt) </p>
     </Container>
   );
 }
@@ -59,10 +57,10 @@ const Container = styled.footer`
     height: 100px;
   }
 
-   p {
-     font-size: 0.75rem;
-     margin: 0;
-   }
+  p {
+    font-size: 0.75rem;
+    margin: 0;
+  }
 `;
 
 const Info = styled.div`
@@ -99,6 +97,10 @@ const SocialIcons = styled.div`
   width: 25%;
   padding-right: 10px;
   color: white;
+
+  a {
+    color: inherit;
+  }
 `;
 
 const Wrap = styled.div`
@@ -113,10 +115,8 @@ const Wrap = styled.div`
   cursor: pointer;
   transition: font-size 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
-
   &:hover {
     border: 2px solid white;
     font-size: 1.3em;
   }
-
 `;

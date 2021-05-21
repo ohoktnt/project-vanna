@@ -7,15 +7,16 @@ function Navbar() {
   return (
     <Nav>
       <SocialIcons>
+          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
         <Wrap>
-          <FontAwesomeIcon icon={["fab", "pinterest-p"]} />
+            <FontAwesomeIcon icon={["fab", "instagram"]} />
         </Wrap>
+          </a>
+          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank">
         <Wrap>
-          <FontAwesomeIcon icon={["fab", "instagram"]} />
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} />
         </Wrap>
-        <Wrap>
-          <FontAwesomeIcon icon={["fab", "facebook-f"]} />
-        </Wrap>
+          </a>
       </SocialIcons>
       <Link to={`/`}>
         <Logo src="logoVsized.png" />
@@ -106,6 +107,10 @@ const SocialIcons = styled.div`
   flex-direction: column;
   color: white;
   margin-left: 10px;
+
+  a {
+    color: inherit;
+  }
 `;
 
 const Wrap = styled.div`
