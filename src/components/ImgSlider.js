@@ -17,10 +17,10 @@ function ImgSlider() {
   return (
     <Carousel {...settings}>
       <Wrap>
-        <img src='./bannerimgs/flowersample.jpg'/>
+        <img src='./bannerimgs/makeup.jpg'/>
       </Wrap>
       <Wrap>
-        <img src='./bannerimgs/makeupsample.jpg'/>
+        <img src='./bannerimgs/party.jpg'/>
       </Wrap>
       <Wrap>
         <img src='/banner-temp1.jpg'/>
@@ -32,7 +32,7 @@ function ImgSlider() {
 export default ImgSlider;
 
 const Carousel = styled(Slider)`
-  max-height: calc(100vh - 200px);
+  max-height: calc(100vh - 125px);
 
   .slick-slide div{
     outline: none;
@@ -44,7 +44,7 @@ const Wrap = styled.div`
   border: none;
   img {
     width: 100%;
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 125px);
     border: none;
   }
 `

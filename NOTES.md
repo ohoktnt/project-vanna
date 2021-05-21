@@ -30,6 +30,11 @@ https://www.pexels.com/photo/white-floral-sleeveless-wedding-gown-291759/
 
 https://www.pexels.com/photo/man-and-woman-kissing-2253870/
 
+https://www.pexels.com/photo/people-toasting-wine-glasses-3171837/
+Photo by cottonbro from Pexels
+
+https://www.pexels.com/photo/assorted-cosmetic-products-2253832/
+Photo by Emma Bauso from Pexels
 
 CSS FOR ARROW SERVICES
 https://codepen.io/shawnlooi/pen/eeXmrQ

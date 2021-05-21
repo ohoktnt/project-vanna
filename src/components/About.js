@@ -18,40 +18,40 @@ function About() {
       <h2>Portfolio</h2>
       <PortfolioGrid>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup1.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup2.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup3.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup4.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup5.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup6.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup7.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup8.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup9.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeup10.JPG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeupBA1.JPEG" />
         </Wrap>
         <Wrap>
-          <img src="/headshot.png" />
+          <img src="/images/makeupBA2.JPEG" />
         </Wrap>
       </PortfolioGrid>
     </Container>
