@@ -1,63 +1,65 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import ImgSlider from './ImgSlider'
+import ImgSlider from "./ImgSlider";
 import { Link } from "react-router-dom";
 
-import '../CTAArrow.scss';
+import "../CTAArrow.scss";
 
 function Home() {
   return (
     <Container>
-      <ImgSlider/>
+      <ImgSlider />
       <AboutContainer>
         <h1>Vanna Makeup Artistry</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+          Hi there, I'm Vanna and I would love to guide you through the beauty
+          stage of your planning! Let me take the stress out of what should be
+          fun and pampering part of your event planning - Hair {"&"} Makeup! I
+          specialize in mobile bridal makeup applications, hair styling and also
+          provide garmet and decoration rentals.
+        </p>
         <Link to={`/about`}>
           <AboutButton>Learn about Vanna</AboutButton>
         </Link>
       </AboutContainer>
-        <ServiceContainer>
-      <Link to={`/services`}>
+      <ServiceContainer>
+        <Link to={`/services`}>
           <ul>
             <li>
-              <a class='animated-arrow'>
-                <span class='the-arrow -left'>
-                  <span class='shaft'>
-                  </span>
+              <a class="animated-arrow">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
                 </span>
-                <span class='main'>
-                  <span class='text'>
-                    Explore Services
-                  </span>
-                  <span class='the-arrow -right'>
-                    <span class='shaft'></span>
+                <span class="main">
+                  <span class="text">Explore Services</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
                   </span>
                 </span>
               </a>
             </li>
           </ul>
-      </Link>
-        </ServiceContainer>
+        </Link>
+      </ServiceContainer>
     </Container>
-  )
+  );
 }
 
-export default Home
+export default Home;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0px auto;
-`
+`;
 const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px auto;
   width: 70%;
-  
 `;
 
 const AboutButton = styled.button`
@@ -81,7 +83,7 @@ const AboutButton = styled.button`
     // background: white;
     // color: black;
   }
-`
+`;
 
 const ServiceContainer = styled.div`
   background-color: white;
@@ -91,18 +93,15 @@ const ServiceContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Helvetica Neue LT W01_41488878';
-
+  font-family: "Helvetica Neue LT W01_41488878";
 
   ul {
     list-style-type: none;
   }
-  
+
   span {
     &:hover {
       cursor: pointer;
     }
-
   }
-
 `;
