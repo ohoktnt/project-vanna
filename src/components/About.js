@@ -1,7 +1,138 @@
 import React from "react";
 import styled from "styled-components";
+import Gallery from 'react-grid-gallery';
 
 function About() {
+  const images = [
+    {
+      src:"/images/makeup1.JPG",
+      thumbnail: "/images/makeup1.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup2.JPG",
+      thumbnail: "/images/makeup2.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup3.JPG",
+      thumbnail: "/images/makeup3.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup5.JPG",
+      thumbnail: "/images/makeup5.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair2.JPG",
+      thumbnail: "/images/hair2.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup6.JPG",
+      thumbnail: "/images/makeup6.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup7.JPG",
+      thumbnail: "/images/makeup7.JPG",
+      thumbnailWidth: 250,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup8.JPG",
+      thumbnail: "/images/makeup8.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup9.JPG",
+      thumbnail: "/images/makeup9.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeup10.JPG",
+      thumbnail: "/images/makeup10.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeupBA2.JPEG",
+      thumbnail: "/images/makeupBA2.JPEG",
+      thumbnailWidth: 300,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair1.JPG",
+      thumbnail: "/images/hair1.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair3.JPG",
+      thumbnail: "/images/hair3.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/makeupBA1.JPEG",
+      thumbnail: "/images/makeupBA1.JPEG",
+      thumbnailWidth: 275,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair4.JPG",
+      thumbnail: "/images/hair4.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair5.JPG",
+      thumbnail: "/images/hair5.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair6.JPG",
+      thumbnail: "/images/hair6.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/hair7.JPG",
+      thumbnail: "/images/hair7.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/pose1.JPG",
+      thumbnail: "/images/pose1.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/pose2.JPG",
+      thumbnail: "/images/pose2.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+    {
+      src:"/images/pose3.JPG",
+      thumbnail: "/images/pose3.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
+
+  ]
+
   return (
     <Container>
       <InfoContainer>
@@ -16,7 +147,7 @@ function About() {
         <Headshot src="/headshot.png" />
       </InfoContainer>
       <h2>Portfolio</h2>
-      <PortfolioGrid>
+      {/* <PortfolioGrid>
         <Wrap>
           <img src="/images/makeup1.JPG" />
         </Wrap>
@@ -53,7 +184,10 @@ function About() {
         <Wrap>
           <img src="/images/makeupBA2.JPEG" />
         </Wrap>
-      </PortfolioGrid>
+      </PortfolioGrid> */}
+      <GalleryContainer>
+        <Gallery images={images}/>
+      </GalleryContainer>
     </Container>
   );
 }
@@ -83,29 +217,35 @@ const Headshot = styled.img`
   height: 25rem;
 `;
 
-const PortfolioGrid = styled.div`
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(4, auto);
+const GalleryContainer = styled.div`
+  border: 2px solid red;
+  display: flex;
+  padding: 20px;
 `;
 
-const Wrap = styled.div`
-  cursor: pointer;
-  border-radius: 10px;
-  overflow: hidden; // bc image was overlapping past border
-  border: 3px solid rgba(249, 249, 249, 0.1);
-  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+// const PortfolioGrid = styled.div`
+//   display: grid;
+//   grid-gap: 5px;
+//   grid-template-columns: repeat(4, auto);
+// `;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+// const Wrap = styled.div`
+//   cursor: pointer;
+//   border-radius: 10px;
+//   overflow: hidden; // bc image was overlapping past border
+//   border: 3px solid rgba(249, 249, 249, 0.1);
+//   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
-  &:hover {
-    transform: scale(1.05);
-    border-color: rgba(249, 249, 249, 0.8);
-    box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
-      rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-  }
-`;
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+
+//   &:hover {
+//     transform: scale(1.05);
+//     border-color: rgba(249, 249, 249, 0.8);
+//     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+//       rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+//   }
+// `;
