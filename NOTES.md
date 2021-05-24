@@ -44,3 +44,7 @@ https://www.facebook.com/van.nguyen.796569
 
 instagram:
 https://www.instagram.com/makeupby_vanna/
+
+
+CSS FOR HIRE BUTTON
+https://codepen.io/valentingalmand/pen/ggKrpY

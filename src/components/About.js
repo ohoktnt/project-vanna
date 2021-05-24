@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Gallery from 'react-grid-gallery';
+import Gallery from "react-grid-gallery";
+import HireBanner from "./HireBanner";
 
-import { images } from './imagesArr';
+import { images } from "./imagesArr";
 
 function About() {
   return (
@@ -18,9 +19,10 @@ function About() {
         </Info>
         <Headshot src="/headshot.png" />
       </InfoContainer>
-      <h2>Portfolio</h2>
+      <HireBanner />
       <GalleryContainer>
-        <Gallery images={images} enableImageSelection={false}/>
+        <h2>Portfolio</h2>
+        <Gallery images={images} enableImageSelection={false} />
       </GalleryContainer>
     </Container>
   );
@@ -29,17 +31,20 @@ function About() {
 export default About;
 
 const Container = styled.div`
-  width: 60%;
+  width: 100%;
   margin: 10px auto;
 `;
 
 const InfoContainer = styled.div`
   display: flex;
-  flex-direction: space-around;
+  width: 60%;
   align-items: center;
+  margin: 0px auto;
 `;
 
 const Info = styled.div`
+min-height: 200px;
+max-height: 350px;
   p {
     width: 50%;
     margin: 0px auto;
@@ -48,10 +53,16 @@ const Info = styled.div`
 
 const Headshot = styled.img`
   border-radius: 50% 10%;
-  height: 25rem;
+  position: relative;
+  height: 25vw;
+  min-height: 200px;
+  max-height: 350px;
 `;
 
 const GalleryContainer = styled.div`
   display: grid;
-`;
+  width: 70%;
+  margin: 0px auto;
 
+  // padding-top: 100px;
+`;

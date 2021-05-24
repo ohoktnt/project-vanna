@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Form from './Form';
 import ServiceItems from './ServiceItems'
+import HireBanner from './HireBanner'
 
 import ImgSlider from "./ImgSlider";
 import { Link } from "react-router-dom";
@@ -46,6 +47,7 @@ function Home() {
           </ul>
         </Link>
       </ServiceContainer>
+      <HireBanner/>
       <Form />
     </Container>
   );
