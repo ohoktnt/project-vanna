@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Gallery from 'react-grid-gallery';
+
+import { images } from './imagesArr';
 
 function About() {
   return (
@@ -10,50 +13,15 @@ function About() {
           <p>
             My name is Vanna and I am a self taught beautician. With my previous
             working experince in salons, I have gained the skills and confidence
-            to start up my own business and provide fun beautiful services. 
+            to start up my own business and provide fun beautiful services.
           </p>
         </Info>
         <Headshot src="/headshot.png" />
       </InfoContainer>
       <h2>Portfolio</h2>
-      <PortfolioGrid>
-        <Wrap>
-          <img src="/images/makeup1.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup2.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup3.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup4.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup5.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup6.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup7.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup8.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup9.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeup10.JPG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeupBA1.JPEG" />
-        </Wrap>
-        <Wrap>
-          <img src="/images/makeupBA2.JPEG" />
-        </Wrap>
-      </PortfolioGrid>
+      <GalleryContainer>
+        <Gallery images={images}/>
+      </GalleryContainer>
     </Container>
   );
 }
@@ -81,6 +49,11 @@ const Info = styled.div`
 const Headshot = styled.img`
   border-radius: 50% 10%;
   height: 25rem;
+`;
+
+const GalleryContainer = styled.div`
+  border: 1px solid red;
+  display:flex;
 `;
 
 const PortfolioGrid = styled.div`
