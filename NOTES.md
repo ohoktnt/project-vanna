@@ -36,6 +36,15 @@ Photo by cottonbro from Pexels
 https://www.pexels.com/photo/assorted-cosmetic-products-2253832/
 Photo by Emma Bauso from Pexels
 
+https://www.pexels.com/photo/woman-holding-bouquet-of-roses-1424810/
+flower pictire
+
+https://www.pexels.com/photo/white-pink-and-orange-rose-bouquet-931155/
+
+https://www.pexels.com/photo/selective-focus-photography-of-macaroons-3734027/
+
+https://www.pexels.com/photo/pink-and-yellow-flowers-931179/
+
 CSS FOR ARROW SERVICES
 https://codepen.io/shawnlooi/pen/eeXmrQ
 
