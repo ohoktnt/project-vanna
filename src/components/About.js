@@ -10,7 +10,7 @@ import { images } from "./imagesArr";
 function About() {
   return (
     <Container>
-      <HeaderHero headerImg={"makeup6.jpg"}/>
+      <HeaderHero headerImg={"makeup6.jpg"} slogan={'Makeup beyong Imagination'}/>
       <InfoContainer>
         <Info>
           <h2>Who Am I?</h2>
@@ -42,7 +42,7 @@ const InfoContainer = styled.div`
   display: flex;
   width: 60%;
   align-items: center;
-  margin: 0px auto;
+  margin: 10px auto;
 `;
 
 const Info = styled.div`

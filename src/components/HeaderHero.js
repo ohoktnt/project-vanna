@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
-function HeaderHero({headerImg}) {
+function HeaderHero({headerImg, slogan}) {
   return (
     <Container headerBg={headerImg}>
-      <HeaderText>Make up Slogaannnn</HeaderText>
+      <HeaderText>{slogan}</HeaderText>
       <ArrowContainer>
         <FontAwesomeIcon icon={faAngleDown} />
       </ArrowContainer>
@@ -39,4 +39,6 @@ const HeaderText = styled.div`
 `;
 
 const ArrowContainer = styled.div`
+animation: animateDown infinite 1.5s;
+
 `;

@@ -8,7 +8,7 @@ import HeaderHero from "./HeaderHero";
 function Services() {
   return (
     <Container>
-      <HeaderHero headerImg={"wedding.jpg"}/>
+      <HeaderHero headerImg={"wedding.jpg"} slogan={"For events as unique as you"}/>
       <h1>Services</h1>
       <ServiceItems />
       <img id="menu" src="Menu.png" />
