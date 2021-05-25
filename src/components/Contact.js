@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Contact() {
   return (
     <Container>
-      <HeaderHero headerImg={"party.jpg"} />
+      <HeaderHero headerImg={"party.jpg"} slogan={"Let's Party!"}/>
       <h1>Contact Us</h1>
       <ContactInfo>
         <Info>

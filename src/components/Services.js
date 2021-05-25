@@ -8,10 +8,14 @@ import HeaderHero from "./HeaderHero";
 function Services() {
   return (
     <Container>
-      <HeaderHero headerImg={"wedding.jpg"} slogan={"For events as unique as you"}/>
+      <HeaderHero
+        headerImg={"wedding.jpg"}
+        slogan={"For events as unique as you"}
+      />
       <h1>Services</h1>
       <ServiceItems />
       <img id="menu" src="Menu.png" />
+      <p>* Price available upon request</p>
       <BookContainer>
         <Link to={`/contact`}>
           <ul>
@@ -58,6 +62,10 @@ const Container = styled.div`
   #menu {
     width: 50%;
   }
+  
+  p {
+    margin: 0 auto;
+  }
 
   color: #0e1111;
 
@@ -78,7 +86,7 @@ const RhombGallery = styled.div`
   grid-gap: 2vmin;
   justify-items: center;
   align-items: center;
-  
+
   img {
     z-index: 1;
     grid-column: span 2;
@@ -87,11 +95,11 @@ const RhombGallery = styled.div`
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: scale(1);
     transition: all 0.25s;
-    
+
     &:nth-child(7n + 1) {
       grid-column: 2 / span 2;
     }
-    
+
     &:hover {
       z-index: 2;
       transform: scale(1.25);
@@ -100,6 +108,7 @@ const RhombGallery = styled.div`
 `;
 
 const BookContainer = styled.div`
+  padding: 20px;
   background-color: white;
   height: 100px;
   font-size: 2em;

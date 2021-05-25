@@ -10,7 +10,11 @@ import { images } from "./imagesArr";
 function About() {
   return (
     <Container>
-      <HeaderHero headerImg={"makeup6.jpg"} slogan={'Makeup beyong Imagination'}/>
+      <HeaderHero
+        headerImg={"makeup6.jpg"}
+        slogan={"Experience the journey"}
+        // slogan={"Who am I?"}
+      />
       <InfoContainer>
         <Info>
           <h2>Who Am I?</h2>
@@ -46,8 +50,8 @@ const InfoContainer = styled.div`
 `;
 
 const Info = styled.div`
-min-height: 200px;
-max-height: 350px;
+  min-height: 200px;
+  max-height: 350px;
   p {
     width: 50%;
     margin: 0px auto;

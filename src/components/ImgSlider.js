@@ -34,7 +34,7 @@ function ImgSlider() {
         </Wrap>
       </Carousel>
       <HeaderText>
-        <h1>Welcome! Let's Get Glam</h1>
+        <h1>MAKEUP BEYOND IMAGINATION</h1>
         <FontAwesomeIcon icon={faAngleDown} size="2x" class="arrow-down"/>
       </HeaderText>
     </Container>
