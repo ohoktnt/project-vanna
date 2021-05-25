@@ -49,6 +49,12 @@ https://www.pexels.com/photo/makeup-palette-with-mirror-457704/
 
 https://www.pexels.com/photo/assorted-cosmetic-products-2253832/
 
+https://www.pexels.com/photo/woman-in-white-spaghetti-strap-dress-standing-on-cliff-1030901/
+
+https://www.pexels.com/photo/professional-cosmetic-eyeshadows-composed-near-soft-brushes-for-makeup-6233289/
+
+https://www.pexels.com/photo/white-and-yellow-flowers-table-decor-667320/
+
 CSS FOR ARROW SERVICES
 https://codepen.io/shawnlooi/pen/eeXmrQ
 

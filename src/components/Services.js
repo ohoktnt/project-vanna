@@ -94,7 +94,7 @@ const RhombGallery = styled.div`
     
     &:hover {
       z-index: 2;
-      transform: scale(1.5);
+      transform: scale(1.25);
     }
   }
 `;
