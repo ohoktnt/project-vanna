@@ -27,6 +27,7 @@ function Home() {
           <AboutButton>Learn about Vanna</AboutButton>
         </Link>
       </AboutContainer>
+      <h2>What we offer</h2>
       <ServiceItems/>
       <ServiceContainer>
         <Link to={`/services`}>
@@ -48,6 +49,8 @@ function Home() {
         </Link>
       </ServiceContainer>
       <HireBanner/>
+      <h2>Contact Us</h2>
+      <p>Interested in our services or have some questions? We'd love to connect! Please use the form below.</p>
       <Form />
     </Container>
   );
