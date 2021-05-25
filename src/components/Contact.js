@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Form from './Form';
+import HeaderHero from './HeaderHero';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,6 +9,7 @@ function Contact() {
 
   return (
     <Container>
+      <HeaderHero headerImg={'party.jpg'}/>
       <h1>Contact Us</h1>
       <ContactInfo>
         <Info>
@@ -43,7 +45,7 @@ function Contact() {
 export default Contact;
 
 const Container = styled.div`
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 50px;
 

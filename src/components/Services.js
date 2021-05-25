@@ -3,10 +3,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "../CTAArrow.scss";
 import ServiceItems from "./ServiceItems";
+import HeaderHero from "./HeaderHero";
 
 function Services() {
   return (
     <Container>
+      <HeaderHero headerImg={"wedding.jpg"}/>
       <h1>Services</h1>
       <ServiceItems />
       <img id="menu" src="Menu.png" />

@@ -3,11 +3,14 @@ import styled from "styled-components";
 import Gallery from "react-grid-gallery";
 import HireBanner from "./HireBanner";
 
+import HeaderHero from "./HeaderHero";
+
 import { images } from "./imagesArr";
 
 function About() {
   return (
     <Container>
+      <HeaderHero headerImg={"makeup6.jpg"}/>
       <InfoContainer>
         <Info>
           <h2>Who Am I?</h2>

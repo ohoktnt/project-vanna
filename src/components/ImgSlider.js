@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Slider from 'react-slick';
+import React from "react";
+import styled from "styled-components";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -17,16 +17,19 @@ function ImgSlider() {
   return (
     <Carousel {...settings}>
       <Wrap>
-        <img src='./bannerimgs/makeup.jpg'/>
+        <img src="./bannerimgs/homeheader1.jpg" />
       </Wrap>
       <Wrap>
-        <img src='./bannerimgs/party.jpg'/>
+        <img src="./bannerimgs/makeup.jpg" />
       </Wrap>
       <Wrap>
-        <img src='/banner-temp1.jpg'/>
+        <img src="./bannerimgs/party.jpg" />
       </Wrap>
-    </Carousel >
-  )
+      <Wrap>
+        <img src="/banner-temp1.jpg" />
+      </Wrap>
+    </Carousel>
+  );
 }
 
 export default ImgSlider;
@@ -34,11 +37,10 @@ export default ImgSlider;
 const Carousel = styled(Slider)`
   max-height: calc(100vh - 125px);
 
-  .slick-slide div{
+  .slick-slide div {
     outline: none;
   }
-
-`
+`;
 
 const Wrap = styled.div`
   border: none;
@@ -47,4 +49,4 @@ const Wrap = styled.div`
     max-height: calc(100vh - 125px);
     border: none;
   }
-`
+`;

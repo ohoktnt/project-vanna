@@ -45,6 +45,10 @@ https://www.pexels.com/photo/selective-focus-photography-of-macaroons-3734027/
 
 https://www.pexels.com/photo/pink-and-yellow-flowers-931179/
 
+https://www.pexels.com/photo/makeup-palette-with-mirror-457704/
+
+https://www.pexels.com/photo/assorted-cosmetic-products-2253832/
+
 CSS FOR ARROW SERVICES
 https://codepen.io/shawnlooi/pen/eeXmrQ
 
