@@ -147,10 +147,6 @@ const IconWrap = styled.div`
   color: #262626;
   transition: .5s;
 
-  .fb-icon:hover {
-
-    color: #3b5998;
-  }
 `;
 
 const FormSection = styled.div`
