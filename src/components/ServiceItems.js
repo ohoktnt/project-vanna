@@ -111,6 +111,7 @@ const Card = styled.div`
     h3 {
       background-color: transparent;
       font-size: 1.5rem;
+      font-weight: 600;
       padding-bottom: 5em;
     }
 
