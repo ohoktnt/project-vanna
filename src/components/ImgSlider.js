@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { Fade } from "react-awesome-reveal";
 
 function ImgSlider() {
   let settings = {
@@ -34,8 +35,10 @@ function ImgSlider() {
         </Wrap>
       </Carousel>
       <HeaderText>
-        <h1>MAKEUP BEYOND IMAGINATION</h1>
-        <FontAwesomeIcon icon={faAngleDown} size="2x" class="arrow-down"/>
+        <Fade duration={2000} direction={"up"}>
+          <h1>MAKEUP BEYOND IMAGINATION</h1>
+          <FontAwesomeIcon icon={faAngleDown} size="2x" class="arrow-down" />
+        </Fade>
       </HeaderText>
     </Container>
   );

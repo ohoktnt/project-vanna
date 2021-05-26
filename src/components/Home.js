@@ -7,6 +7,8 @@ import HireBanner from './HireBanner'
 
 import ImgSlider from "./ImgSlider";
 import { Link } from "react-router-dom";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
+
 
 import "../CTAArrow.scss";
 
@@ -16,13 +18,16 @@ function Home() {
       <ImgSlider />
       <AboutContainer>
         <h1>Vanna Makeup Artistry</h1>
-        <p>
-          Hi there, I'm Vanna and I would love to guide you through the beauty
-          stage of your planning! Let me take the stress out of what should be
-          fun and pampering part of your event planning - Hair {"&"} Makeup! I
-          specialize in mobile bridal makeup applications, hair styling and also
-          provide garmet and decoration rentals.
-        </p>
+        <Fade>
+          <p>
+            Hi there, I'm Vanna and I would love to guide you through the beauty
+            stage of your planning! Let me take the stress out of what should be
+            fun and pampering part of your event planning - Hair {"&"} Makeup! I
+            specialize in mobile bridal makeup applications, hair styling and also
+            provide garmet and decoration rentals.
+          </p>
+
+        </Fade>
         <Link to={`/about`}>
           <AboutButton>Learn about Vanna</AboutButton>
         </Link>
@@ -31,6 +36,7 @@ function Home() {
       <ServiceItems/>
       <ServiceContainer>
         <Link to={`/services`}>
+          <AttentionSeeker effect={'headShake'}>
           <ul>
             <li>
               <a class="animated-arrow">
@@ -46,6 +52,7 @@ function Home() {
               </a>
             </li>
           </ul>
+          </AttentionSeeker>
         </Link>
       </ServiceContainer>
       <HireBanner/>
@@ -63,6 +70,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0px auto;
+  padding-bottom: 15px;
 
   @media screen and (max-width: 470px) {
     p {

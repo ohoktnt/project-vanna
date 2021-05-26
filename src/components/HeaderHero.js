@@ -2,11 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { Fade } from "react-awesome-reveal";
+
 
 function HeaderHero({headerImg, slogan}) {
   return (
     <Container headerBg={headerImg}>
-      <HeaderText>{slogan}</HeaderText>
+      <Fade>
+        <HeaderText>{slogan}</HeaderText>
+      </Fade>
       <ArrowContainer>
         <FontAwesomeIcon icon={faAngleDown} />
       </ArrowContainer>

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "../CTAArrow.scss";
 import ServiceItems from "./ServiceItems";
 import HeaderHero from "./HeaderHero";
+import { AttentionSeeker, Fade } from 'react-awesome-reveal';
+
 
 function Services() {
   return (
@@ -14,10 +16,13 @@ function Services() {
       />
       <h1>Services</h1>
       <ServiceItems />
-      <img id="menu" src="Menu.png" />
-      <p>* Price available upon request</p>
+      <Fade>
+        <img id="menu" src="Menu.png" />
+        <p>* Price available upon request</p>
+      </Fade>
       <BookContainer>
         <Link to={`/contact`}>
+        <AttentionSeeker effect={"headShake"}>
           <ul>
             <li>
               <a class="animated-arrow">
@@ -33,6 +38,7 @@ function Services() {
               </a>
             </li>
           </ul>
+        </AttentionSeeker>
         </Link>
       </BookContainer>
       <RhombGallery>

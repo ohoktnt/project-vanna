@@ -1,27 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { AttentionSeeker } from 'react-awesome-reveal';
 
 function HireBanner() {
   return (
+      <AttentionSeeker effect={'pulse'}>
     <Container>
-      <div class="button">
-        {/* <h1>Hire now!</h1> */}
-        <span>
-          <span class="hire-now">Hire now!</span>
-          Call me directly at{" "}
-          <a class="contact-link" href="tel:+4161234567">
-            416-123-4567
-          </a>{" "}
-          or email 
-          <Link to={`/contact`}>
-            <span class="contact-link"> here</span>
-          </Link>
-        </span>
-        <div class="button__horizontal"></div>
-        <div class="button__vertical"></div>
-      </div>
+        <div class="button">
+          {/* <h1>Hire now!</h1> */}
+          <span>
+            <span class="hire-now">Hire now!</span>
+            Call me directly at{" "}
+            <a class="contact-link" href="tel:+4161234567">
+              416-123-4567
+            </a>{" "}
+            or email 
+            <Link to={`/contact`}>
+              <span class="contact-link"> here</span>
+            </Link>
+          </span>
+          <div class="button__horizontal"></div>
+          <div class="button__vertical"></div>
+        </div>
     </Container>
+      </AttentionSeeker>
   );
 }
 
