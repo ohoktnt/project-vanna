@@ -86,6 +86,7 @@ const RhombGallery = styled.div`
   max-width: 1200px;
   max-height: 1200px;
   padding: 20px;
+  overflow: hidden;
 
   display: grid;
   grid-template-columns: repeat(8, 1fr);

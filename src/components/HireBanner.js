@@ -37,7 +37,7 @@ const Container = styled.div`
   
   .button {
     padding: 20px 40px;
-    background: #eee4e1;
+    background: #fae0e4;
     border: none;
     position: relative;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ const Container = styled.div`
       left: 0;
       bottom: 0;
       right: 0;
-      border: 2px solid #000;
+      border: 2px solid #30343f;
       transition: transform 0.2s;
     }
     &:after {
@@ -69,7 +69,7 @@ const Container = styled.div`
       }
 
       .contact-link {
-        color: #9a8c98;
+        color: #4a4e69;
 
       }
     }

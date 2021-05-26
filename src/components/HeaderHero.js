@@ -8,12 +8,12 @@ import { Fade } from "react-awesome-reveal";
 function HeaderHero({headerImg, slogan}) {
   return (
     <Container headerBg={headerImg}>
-      <Fade>
+      <Fade delay={300}>
         <HeaderText>{slogan}</HeaderText>
-      </Fade>
       <ArrowContainer>
         <FontAwesomeIcon icon={faAngleDown} />
       </ArrowContainer>
+      </Fade>
     </Container>
   );
 }

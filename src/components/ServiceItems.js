@@ -68,7 +68,7 @@ const Card = styled.div`
   position: relative;
   box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-
+  z-index: 1;
   h3 {
     width: 75%;
     font-size: 1.5rem;

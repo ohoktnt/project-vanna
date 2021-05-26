@@ -18,13 +18,15 @@ function Contact() {
           <h2>Vanna Makeup Artistry</h2>
           <div>
             <span>
-              <FontAwesomeIcon icon={faMapMarkerAlt} />   Toronto, ON Canada
+              <FontAwesomeIcon icon={faMapMarkerAlt} />  &nbsp;Toronto, ON Canada
             </span>
             <a href="tel:+4161234567">
-              <FontAwesomeIcon icon={faPhoneAlt} />   416-123-4567
+              <FontAwesomeIcon icon={faPhoneAlt} />
+              <span>416-123-4567</span>
             </a>
             <a href="mailto:info@vannamakeup.com">
-              <FontAwesomeIcon icon={faEnvelope} />   info@vannamakeup.com
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span>info@vannamakeup.com</span>
             </a>
           </div>
         </Info>
@@ -96,26 +98,58 @@ const ContactInfo = styled.div`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 5px;
 
-    a:hover {
-      color: grey;
-      transform: scale(1.1)
+    // a:hover {
+    //   color: grey;
+    //   transform: scale(1.1)
+    // }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      letter-spacing: 1.42px;
+
+      span {
+        position: relative;
+        margin: 0px 10px;
+
+        &:after {
+          content: "";
+          height: 2px;
+          background: black;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -6px;
+          opacity: 0;
+          transform-origin: left center;
+          transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+          transform: scaleX(0);
+        }
+      }
+
+      &:hover {
+        span:after {
+          transform: scaleX(1);
+          opacity: 1;
+        }
+      }
     }
   }
-  
+
   @media screen and (max-width: 470px) {
     width: 100vw;
     div {
       margin: 0px auto;
-    } 
+    }
   }
-
 `;
 
 const Social = styled.div`
