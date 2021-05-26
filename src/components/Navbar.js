@@ -54,9 +54,11 @@ const Nav = styled.nav`
   justify-content: space-between;
   width: 100vw;
 
-  @media screen and (max-width: 900px) {
+
+  @media screen and (max-width: 900px) and (min-width: 500px) {
     height: 100px;
-  }
+   }
+
 `;
 const Logo = styled.img`
   display: flex;
@@ -115,6 +117,12 @@ const NavMenu = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    top: 35px;
+    z-index: 1;
+   }
+  
 `;
 
 const SocialIcons = styled.div`

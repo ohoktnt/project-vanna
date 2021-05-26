@@ -153,6 +153,10 @@ const FormGroup = styled.div`
     ::placeholder {
       padding-left: 2px;
     }
+
+    @media screen and (max-width: 470px) {
+      width: 80vw;
+    }
   }
 
   textarea {
@@ -186,14 +190,20 @@ const FormGroup = styled.div`
         "Helvetica Neue", sans-serif;
       padding-left: 2px;
     }
+
+    @media screen and (max-width: 470px) {
+      width: 80vw;
+    }
   }
+
+
 `;
 
 const SubmitButton = styled.button`
   width: 502px;
   height: 50px;
 
-  margin: -5px 0px 0px 0px;
+  // margin: -5px 0px 0px 0px;
   
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
@@ -217,6 +227,12 @@ const SubmitButton = styled.button`
     ::placeholder {
       color: white;
     }
+  }
+
+  @media screen and (max-width: 470px) {
+    width: 88vw;
+    margin: 0;
+    padding: 0;
   }
 
 `;

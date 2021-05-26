@@ -52,22 +52,43 @@ const Container = styled.footer`
   // background: #43464b;
   background: black;
   height: 120px;
+  position: absolute;
+  width: 100vw;
 
   img {
     height: 100px;
+    @media screen and (max-width: 900px) {
+      // border: 1px solid red;
+      position: absolute; 
+      left: 0px;
+    }
   }
 
   p {
     font-size: 0.75rem;
     margin: 0;
     color: white;
+  
+    @media screen and (max-width: 900px) {
+      position: relative;
+      top: 100px;
+    }
   }
+
+  @media screen and (max-width: 900px) {
+    height: 180px;
+  }
+
 `;
 
 const Info = styled.div`
   display: flex;
   color: black;
   align-items: center;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 const NavLinks = styled.nav`
@@ -91,6 +112,15 @@ const NavLinks = styled.nav`
       color: #808080;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5px auto;
+    position: relative;
+    top: 80px;
+  }
+
 `;
 
 const SocialIcons = styled.div`
@@ -101,6 +131,13 @@ const SocialIcons = styled.div`
 
   a {
     color: inherit;
+  }
+
+  @media screen and (max-width: 900px) {
+    // border: 1px solid red;
+    position: absolute;
+    top: 25px;
+    right: 0px;
   }
 `;
 

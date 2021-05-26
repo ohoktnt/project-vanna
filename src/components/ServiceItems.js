@@ -45,12 +45,18 @@ const CardContainer = styled.div`
   justify-content: space-around;
   width: 90%;
   margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
 `;
 
 const Card = styled.div`
   // border: 2px solid #cd853f;
   // border-radius: 5px;
-  margin: 0 25px;
+  margin: 25px 25px;
   width: 25vw;
   height: 25vw;
   display: flex;

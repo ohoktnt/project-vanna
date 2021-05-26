@@ -11,7 +11,7 @@ function About() {
   return (
     <Container>
       <HeaderHero
-        headerImg={"makeup6.jpg"}
+        headerImg={"makeup3.jpg"}
         slogan={"Experience the journey"}
         // slogan={"Who am I?"}
       />
@@ -40,6 +40,7 @@ export default About;
 const Container = styled.div`
   width: 100%;
   margin: 10px auto;
+
 `;
 
 const InfoContainer = styled.div`
@@ -47,6 +48,11 @@ const InfoContainer = styled.div`
   width: 60%;
   align-items: center;
   margin: 10px auto;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
 `;
 
 const Info = styled.div`
@@ -56,6 +62,15 @@ const Info = styled.div`
     width: 50%;
     margin: 0px auto;
   }
+
+  @media screen and (max-width: 600px) {
+    p {
+      // border: 1px solid red;
+      width: 90%;
+      padding-bottom: 5px;
+    }
+  }
+
 `;
 
 const Headshot = styled.img`

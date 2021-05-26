@@ -63,6 +63,13 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0px auto;
+
+  @media screen and (max-width: 470px) {
+    p {
+      width: 80%;
+      margin: 0px auto;
+    }
+  }
 `;
 const AboutContainer = styled.div`
   display: flex;

@@ -87,6 +87,10 @@ const ContactInfo = styled.div`
     color: inherit;
     padding: 2px 0;
   }
+
+  @media screen and (max-width: 470px) {
+    flex-direction: column;
+  }
 `;
 
 const Info = styled.div`
@@ -104,6 +108,14 @@ const Info = styled.div`
       transform: scale(1.1)
     }
   }
+  
+  @media screen and (max-width: 470px) {
+    width: 100vw;
+    div {
+      margin: 0px auto;
+    } 
+  }
+
 `;
 
 const Social = styled.div`
@@ -177,5 +189,9 @@ const FormSection = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
+    @media screen and (max-width: 470px) {
+      width: 80%;
+    }
   }
 `;

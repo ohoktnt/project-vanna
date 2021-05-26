@@ -60,7 +60,8 @@ const Container = styled.div`
   }
 
   #menu {
-    width: 50%;
+    max-width: 50%;
+    min-width: 400px;
   }
   
   p {
@@ -116,7 +117,7 @@ const BookContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Helvetica Neue LT W01_41488878";
+  font-family: "Helvetica Neue LT W01_41488878", serif, 'Helvetica Neue';
 
   ul {
     list-style-type: none;
