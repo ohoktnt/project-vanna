@@ -129,7 +129,7 @@ const FormGroup = styled.div`
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-
+  background-colour: white;
 
   input {
     padding: 0px 15px 0px 15px;
@@ -190,29 +190,6 @@ const FormGroup = styled.div`
 `;
 
 const SubmitButton = styled.button`
-  // margin: 10px;
-  // padding: 12px 14px;
-  // border-radius 4px;
-  // font-size: 1em;
-  // letter-spacing: 1.2px;
-  // cursor: pointer;
-  // background: rgba(0, 0, 0, 0.3);
-  // border: 1px solid rgb(249, 249, 249);
-  // color: rgb(249, 249, 249);
-  // transform-origin: left center;
-  // transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-
-  // &:hover {
-  //   background: rgb(0,0,0)
-  //   // border: 1px solid black;
-  //   // background: white;
-  //   // color: black;
-  // }
-
-  // span {
-  //   margin: 5px;
-  // }
-
   width: 502px;
   height: 50px;
 
@@ -222,6 +199,7 @@ const SubmitButton = styled.button`
   font-size: 0.875em;
   color: #a6a6a6;
   background: inherit;
+  letter-spacing: 1.5px;
   
   outline:none;
   cursor: pointer;

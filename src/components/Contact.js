@@ -4,17 +4,29 @@ import Form from "./Form";
 import HeaderHero from "./HeaderHero";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
     <Container>
-      <HeaderHero headerImg={"party.jpg"} slogan={"Let's Party!"}/>
+      <HeaderHero headerImg={"party.jpg"} slogan={"Let's Party!"} />
       <h1>Contact Us</h1>
       <ContactInfo>
         <Info>
           <h2>Vanna Makeup Artistry</h2>
-          <a href="mailto:info@vannamakeup.com">info@vannamakeup.com</a>
-          <a href="tel:+4161234567">416-123-4567</a>
+          <div>
+            <span>
+              <FontAwesomeIcon icon={faMapMarkerAlt} />   Toronto, ON Canada
+            </span>
+            <a href="tel:+4161234567">
+              <FontAwesomeIcon icon={faPhoneAlt} />   416-123-4567
+            </a>
+            <a href="mailto:info@vannamakeup.com">
+              <FontAwesomeIcon icon={faEnvelope} />   info@vannamakeup.com
+            </a>
+          </div>
         </Info>
         <Social>
           <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
@@ -51,10 +63,11 @@ const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   padding-bottom: 50px;
+  font-size: 1.25rem;
 
   h2 {
     margin: 5px;
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
   h3 {
@@ -79,6 +92,18 @@ const ContactInfo = styled.div`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+
+    a:hover {
+      color: grey;
+      transform: scale(1.1)
+    }
+  }
 `;
 
 const Social = styled.div`
@@ -130,8 +155,6 @@ const Wrap = styled.div`
   #ig-icon:hover {
     color: #e4405f;
   }
-  
-
 `;
 
 const IconWrap = styled.div`

@@ -60,6 +60,7 @@ const Container = styled.footer`
   p {
     font-size: 0.75rem;
     margin: 0;
+    color: white;
   }
 `;
 

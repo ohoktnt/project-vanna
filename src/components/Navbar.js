@@ -52,12 +52,27 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100vw;
+
+  @media screen and (max-width: 900px) {
+    height: 100px;
+  }
 `;
 const Logo = styled.img`
   display: flex;
   padding-top: 10px;
   padding-left: 50px;
   height: 200px;
+
+  @media screen and (max-width: 900px) {
+   padding-left: 0;
+   position: absolute;
+   height: 120px;
+   top: -15px;
+   left: -40px;
+   z-index: 1;
+  }
+
 `;
 
 const NavMenu = styled.div`
@@ -110,6 +125,10 @@ const SocialIcons = styled.div`
 
   a {
     color: inherit;
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
   }
 `;
 
