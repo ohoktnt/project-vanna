@@ -35,8 +35,7 @@ const Container = styled.div`
   color: white;
 
   @media screen and (max-width: 420px) {
-    backgrond-size: auto 100%;
-    border: 1px solid red;
+    backgrond-size: 50% auto;
   }
 
 `;
