@@ -48,22 +48,30 @@ export default ImgSlider;
 
 const Container = styled.div`
   position: relative;
+  // border: 1px solid red;
 `;
 
 const HeaderText = styled.div`
   position: absolute;
-  // border: 2px solid red;
-  top: 20vmin;
+  // border: 2px solid green;
+  top: 10vmin;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: calc(45vmin - 20px);
-  width: 25vw;
-  padding: 20px;
-  margin: 0 37.5vw;
-  font-size: 2vw;
+  height: 80%;
+  width: 100%;
+  // padding: 0px 50vw;
+  // margin: 0 25vw;
+  font-size: 3vmin;
+  
+  h1 {
+    display: flex;
+    width: 25%;
+    margin: 20px;
+    padding: 20px calc(35vw);
+  }
 
   .arrow-down {
     animation: animateDown infinite 1.5s;

@@ -78,7 +78,7 @@ const Container = styled.footer`
   }
 
   @media screen and (max-width: 900px) {
-    height: 200px;
+    height: 220px;
   }
 
 `;
