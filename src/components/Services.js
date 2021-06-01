@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 import "../CTAArrow.scss";
 import ServiceItems from "./ServiceItems";
 import HeaderHero from "./HeaderHero";
-import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
 import Gallery from "react-grid-gallery";
 import { images } from "./imagesArr";
-
-
 
 function Services() {
   const [selectedService, setSelectedService] = useState(null);
@@ -21,11 +19,18 @@ function Services() {
       <h1>Services</h1>
       <p>Click on the service card below to view the gallery!</p>
       <ServiceItems clickService={setSelectedService} />
-      <ServiceGallery>
-        <span onClick={() => setSelectedService(null)}>X</span>
-        {selectedService}
-        <Gallery images={images[selectedService]} enableImageSelection={false} />
-      </ServiceGallery>
+      {selectedService && (
+        <ServiceGallery>
+          <span onClick={() => setSelectedService(null)}>CLOSE</span>
+          <Fade>
+            <Gallery
+              images={images[selectedService]}
+              enableImageSelection={false}
+              backdropClosesModal = {true}
+            />
+          </Fade>
+        </ServiceGallery>
+      )}
       <Fade>
         <img id="menu" src="Menu.png" />
         <p>* Price available upon request</p>
@@ -153,5 +158,19 @@ const ServiceGallery = styled.div`
   width: 90%;
   padding: 20px 5vw;
   margin: 5px auto;
-  
+
+  span {
+    margin: 10px auto;
+    margin-top: 0;
+    cursor: pointer;
+    width: auto;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+    width: 15vw;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
 `;

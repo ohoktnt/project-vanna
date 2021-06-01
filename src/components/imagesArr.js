@@ -40,7 +40,7 @@ export const images = {
     {
       src: "/images/makeup7.JPG",
       thumbnail: "/images/makeup7.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 230,
       thumbnailHeight: 174,
     },
     {
@@ -106,19 +106,19 @@ export const images = {
     {
       src: "/images/makeup18.JPG",
       thumbnail: "/images/makeup18.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
       src: "/images/makeup19.JPG",
       thumbnail: "/images/makeup19.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
       src: "/images/makeup20.jpg",
       thumbnail: "/images/makeup20.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
@@ -174,19 +174,19 @@ export const images = {
     {
       src: "/images/dress2.JPG",
       thumbnail: "/images/dress2.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 130,
       thumbnailHeight: 174,
     },
     {
       src: "/images/dress3.JPG",
       thumbnail: "/images/dress3.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
       src: "/images/dress4.JPG",
       thumbnail: "/images/dress4.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
@@ -198,7 +198,7 @@ export const images = {
     {
       src: "/images/dress6.JPG",
       thumbnail: "/images/dress6.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 220,
       thumbnailHeight: 174,
     },
     {
@@ -228,19 +228,19 @@ export const images = {
     {
       src: "/images/dress11.JPG",
       thumbnail: "/images/dress11.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
       src: "/images/dress12.jpg",
       thumbnail: "/images/dress12.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 170,
       thumbnailHeight: 174,
     },
     {
       src: "/images/dress13.JPG",
       thumbnail: "/images/dress13.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 175,
       thumbnailHeight: 174,
     },
   ],
@@ -266,19 +266,19 @@ export const images = {
     {
       src: "/images/deco4.JPG",
       thumbnail: "/images/deco4.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
       src: "/images/deco5.JPG",
       thumbnail: "/images/deco5.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
     },
     {
       src: "/images/deco6.JPG",
       thumbnail: "/images/deco6.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 175,
       thumbnailHeight: 174,
     },
     {
@@ -296,19 +296,19 @@ export const images = {
     {
       src: "/images/deco9.jpg",
       thumbnail: "/images/deco9.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 125,
       thumbnailHeight: 174,
     },
     {
       src: "/images/deco10.jpg",
       thumbnail: "/images/deco10.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 125,
       thumbnailHeight: 174,
     },
     {
       src: "/images/deco11.jpg",
       thumbnail: "/images/deco11.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 210,
       thumbnailHeight: 174,
     },
     {
@@ -326,13 +326,13 @@ export const images = {
     {
       src: "/images/deco14.jpg",
       thumbnail: "/images/deco14.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 130,
       thumbnailHeight: 174,
     },
     {
       src: "/images/deco15.jpg",
       thumbnail: "/images/deco15.jpg",
-      thumbnailWidth: 150,
+      thumbnailWidth: 190,
       thumbnailHeight: 174,
     },
     {

@@ -29,7 +29,11 @@ function About() {
       <HireBanner />
       <GalleryContainer>
         <h2>Portfolio</h2>
-        <Gallery images={images.about} enableImageSelection={false} />
+        <Gallery
+          images={images.about}
+          backdropClosesModal={true}
+          enableImageSelection={false}
+        />
       </GalleryContainer>
     </Container>
   );
@@ -40,7 +44,6 @@ export default About;
 const Container = styled.div`
   width: 100%;
   margin: 10px auto;
-
 `;
 
 const InfoContainer = styled.div`
@@ -52,7 +55,6 @@ const InfoContainer = styled.div`
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }
-
 `;
 
 const Info = styled.div`
@@ -70,7 +72,6 @@ const Info = styled.div`
       padding-bottom: 5px;
     }
   }
-
 `;
 
 const Headshot = styled.img`
@@ -93,5 +94,5 @@ const GalleryContainer = styled.div`
 
   @media screen and (max-width: 420px) {
     width: 100%;
-  } 
+  }
 `;
