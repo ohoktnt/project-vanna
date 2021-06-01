@@ -92,6 +92,7 @@ function Form() {
           required
           type="date"
           name="event_date"
+          placeholder="Event Date"
           min="2021-01-01"
           value={formArgs.date}
           onChange={(event) => {
@@ -160,13 +161,14 @@ const FormGroup = styled.div`
   }
 
   input[type="date"] {
-    display: block;
+    // display: block;
 
     /* Solution 1 */
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
+    content: attr(placeholder);
   }
-  
+
   textarea {
     width: 470px;
     max-width: 470px;
