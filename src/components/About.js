@@ -29,7 +29,7 @@ function About() {
       <HireBanner />
       <GalleryContainer>
         <h2>Portfolio</h2>
-        <Gallery images={images} enableImageSelection={false} />
+        <Gallery images={images.about} enableImageSelection={false} />
       </GalleryContainer>
     </Container>
   );
@@ -82,9 +82,16 @@ const Headshot = styled.img`
 `;
 
 const GalleryContainer = styled.div`
-  display: grid;
-  width: 70%;
-  margin: 0px auto;
+  // display: grid;
+  // width: 70%;
+  // margin: 0px auto;
 
-  // padding-top: 100px;
+  //testings
+  display: grid;
+  width: 90%;
+  margin: 0px 5vw;
+
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  } 
 `;

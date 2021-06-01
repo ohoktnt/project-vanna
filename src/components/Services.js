@@ -6,76 +6,12 @@ import ServiceItems from "./ServiceItems";
 import HeaderHero from "./HeaderHero";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
 import Gallery from "react-grid-gallery";
+import { images } from "./imagesArr";
+
+
 
 function Services() {
   const [selectedService, setSelectedService] = useState(null);
-
-  const images = {
-    null: [],
-    makeup: [
-      {
-        src: "/images/makeup1.JPG",
-        thumbnail: "/images/makeup1.JPG",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
-      },
-      {
-        src: "/images/makeup2.JPG",
-        thumbnail: "/images/makeup2.JPG",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-      },
-
-      {
-        src: "/images/makeup3.JPG",
-        thumbnail: "/images/makeup3.JPG",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-      },
-    ],
-    dress: [
-      {
-        src:"/images/pose1.JPG",
-        thumbnail: "/images/pose1.JPG",
-        thumbnailWidth: 150,
-        thumbnailHeight: 174,
-      },
-      {
-        src:"/images/pose2.JPG",
-        thumbnail: "/images/pose2.JPG",
-        thumbnailWidth: 150,
-        thumbnailHeight: 174,
-      },
-      {
-        src:"/images/pose3.JPG",
-        thumbnail: "/images/pose3.JPG",
-        thumbnailWidth: 150,
-        thumbnailHeight: 174,
-      },
-    ],
-    deco: [
-      {
-        src: "/servicesImgs/service5.jpg",
-        thumbnail: "/servicesImgs/service5.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-      },
-      {
-        src: "/servicesImgs/service6.jpg",
-        thumbnail: "/servicesImgs/service6.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-      },
-
-      {
-        src: "/servicesImgs/service7.jpg",
-        thumbnail: "/servicesImgs/service7.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-      },
-    ],
-  };
-
   return (
     <Container>
       <HeaderHero
@@ -83,6 +19,7 @@ function Services() {
         slogan={"For events as unique as you"}
       />
       <h1>Services</h1>
+      <p>Click on the service card below to view the gallery!</p>
       <ServiceItems clickService={setSelectedService} />
       <ServiceGallery>
         <span onClick={() => setSelectedService(null)}>X</span>
@@ -212,4 +149,9 @@ const BookContainer = styled.div`
 
 const ServiceGallery = styled.div`
   display: grid;
+  background-color: #f0efeb;
+  width: 90%;
+  padding: 20px 5vw;
+  margin: 5px auto;
+  
 `;
