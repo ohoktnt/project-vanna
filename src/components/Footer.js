@@ -24,21 +24,23 @@ function Footer() {
         </SocialIcons>
         <NavLinks>
           <h4>Links</h4>
-          <Link to={`/`}>
-            <a>Home</a>
-          </Link>
-          <span>•</span>
-          <Link to={`/about`}>
-            <a>About Me</a>
-          </Link>
-          <span>•</span>
-          <Link to={`/services`}>
-            <a>Services</a>
-          </Link>
-          <span>•</span>
-          <Link to={`/contact`}>
-            <a>Contact</a>
-          </Link>
+          <div>
+            <Link to={`/`}>
+              <a>Home</a>
+            </Link>
+            <span>•</span>
+            <Link to={`/about`}>
+              <a>About Me</a>
+            </Link>
+            <span>•</span>
+            <Link to={`/services`}>
+              <a>Services</a>
+            </Link>
+            <span>•</span>
+            <Link to={`/contact`}>
+              <a>Contact</a>
+            </Link>
+          </div>
         </NavLinks>
       </Info>
       <p>©2021 Vannamakeup.com | Web Design + Development by Tammy(ohoktnt) </p>
@@ -119,6 +121,11 @@ const NavLinks = styled.nav`
     margin: 5px auto;
     position: relative;
     top: 80px;
+    
+    div {
+      display: flex;
+      flex-wrap:wrap;
+    }
   }
 
 `;
