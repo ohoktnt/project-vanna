@@ -33,7 +33,8 @@ const Container = styled.div`
   position: fixed;
   width: 100%;
   bottom: 15px;
-  margin-left: calc(100vw - 95px);
+  left: calc(100vw - 95px);
+
   z-index: 2;
   cursor: pointer;
   animation: fadeIn 0.3s;
