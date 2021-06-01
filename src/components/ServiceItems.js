@@ -1,10 +1,10 @@
 import React from "react";
 import styled from 'styled-components'
 
-function ServiceItems() {
+function ServiceItems(props) {
   return (
     <CardContainer>
-      <Card>
+      <Card onClick={() => props.clickService("makeup")}>
         <h3>Make up {`&`} Hair</h3>
         <ul>
           <li>Wedding</li>
@@ -14,7 +14,7 @@ function ServiceItems() {
         </ul>
         <img src="/servicesImgs/service-card2.jpg" />
       </Card>
-      <Card>
+      <Card onClick={() => props.clickService("dress")}>
         <h3>Dress Rentals</h3>
         <ul>
           <li>Wedding Dress</li>
@@ -24,7 +24,7 @@ function ServiceItems() {
         </ul>
         <img src="/servicesImgs/service-card3.jpg" />
       </Card>
-      <Card>
+      <Card onClick={() => props.clickService("deco")}> 
         <h3>Decorations</h3>
         <ul>
           <li>Balloons</li>

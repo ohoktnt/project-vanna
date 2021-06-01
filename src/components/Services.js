@@ -1,13 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "../CTAArrow.scss";
 import ServiceItems from "./ServiceItems";
 import HeaderHero from "./HeaderHero";
-import { AttentionSeeker, Fade } from 'react-awesome-reveal';
-
+import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import Gallery from "react-grid-gallery";
 
 function Services() {
+  const [selectedService, setSelectedService] = useState(null);
+
+  const images = {
+    null: [],
+    makeup: [
+      {
+        src: "/images/makeup1.JPG",
+        thumbnail: "/images/makeup1.JPG",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+      },
+      {
+        src: "/images/makeup2.JPG",
+        thumbnail: "/images/makeup2.JPG",
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+      },
+
+      {
+        src: "/images/makeup3.JPG",
+        thumbnail: "/images/makeup3.JPG",
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+      },
+    ],
+    dress: [
+      {
+        src:"/images/pose1.JPG",
+        thumbnail: "/images/pose1.JPG",
+        thumbnailWidth: 150,
+        thumbnailHeight: 174,
+      },
+      {
+        src:"/images/pose2.JPG",
+        thumbnail: "/images/pose2.JPG",
+        thumbnailWidth: 150,
+        thumbnailHeight: 174,
+      },
+      {
+        src:"/images/pose3.JPG",
+        thumbnail: "/images/pose3.JPG",
+        thumbnailWidth: 150,
+        thumbnailHeight: 174,
+      },
+    ],
+    deco: [
+      {
+        src: "/servicesImgs/service5.jpg",
+        thumbnail: "/servicesImgs/service5.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+      },
+      {
+        src: "/servicesImgs/service6.jpg",
+        thumbnail: "/servicesImgs/service6.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+      },
+
+      {
+        src: "/servicesImgs/service7.jpg",
+        thumbnail: "/servicesImgs/service7.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+      },
+    ],
+  };
+
   return (
     <Container>
       <HeaderHero
@@ -15,30 +83,35 @@ function Services() {
         slogan={"For events as unique as you"}
       />
       <h1>Services</h1>
-      <ServiceItems />
+      <ServiceItems clickService={setSelectedService} />
+      <ServiceGallery>
+        <span onClick={() => setSelectedService(null)}>X</span>
+        {selectedService}
+        <Gallery images={images[selectedService]} enableImageSelection={false} />
+      </ServiceGallery>
       <Fade>
         <img id="menu" src="Menu.png" />
         <p>* Price available upon request</p>
       </Fade>
       <BookContainer>
         <Link to={`/contact`}>
-        <AttentionSeeker effect={"headShake"}>
-          <ul>
-            <li>
-              <a class="animated-arrow">
-                <span class="the-arrow -left">
-                  <span class="shaft"></span>
-                </span>
-                <span class="main">
-                  <span class="text">Book Appointment</span>
-                  <span class="the-arrow -right">
+          <AttentionSeeker effect={"headShake"}>
+            <ul>
+              <li>
+                <a class="animated-arrow">
+                  <span class="the-arrow -left">
                     <span class="shaft"></span>
                   </span>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </AttentionSeeker>
+                  <span class="main">
+                    <span class="text">Book Appointment</span>
+                    <span class="the-arrow -right">
+                      <span class="shaft"></span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </AttentionSeeker>
         </Link>
       </BookContainer>
       <RhombGallery>
@@ -124,7 +197,7 @@ const BookContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Helvetica Neue LT W01_41488878", serif, 'Helvetica Neue';
+  font-family: "Helvetica Neue LT W01_41488878", serif, "Helvetica Neue";
 
   ul {
     list-style-type: none;
@@ -135,4 +208,8 @@ const BookContainer = styled.div`
       cursor: pointer;
     }
   }
+`;
+
+const ServiceGallery = styled.div`
+  display: grid;
 `;
