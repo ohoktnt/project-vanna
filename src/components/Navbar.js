@@ -84,7 +84,7 @@ const NavMenu = styled.div`
   min-width: 300px;
   justify-content: space-evenly;
   position: relative;
-  margin-right: 50px;
+  padding-right: 50px;
 
   a {
     text-decoration: none;

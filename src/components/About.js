@@ -94,5 +94,6 @@ const GalleryContainer = styled.div`
 
   @media screen and (max-width: 420px) {
     width: 100%;
+    margin: 0;
   }
 `;

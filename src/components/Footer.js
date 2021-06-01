@@ -76,7 +76,7 @@ const Container = styled.footer`
   }
 
   @media screen and (max-width: 900px) {
-    height: 180px;
+    height: 200px;
   }
 
 `;
@@ -95,7 +95,7 @@ const NavLinks = styled.nav`
   display: flex;
   flex-grow: 2;
   width: 100%;
-  padding-right: 65px;
+  // padding-right: 65px;
   color: white;
 
   h4 {

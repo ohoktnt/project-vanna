@@ -81,16 +81,21 @@ const Container = styled.div`
   }
 
   #menu {
-    max-width: 50%;
-    min-width: 400px;
+    max-width: 50vw;
+    min-width: 300px;
   }
   
   p {
     margin: 0 auto;
+    width: 80%;
   }
 
   color: #0e1111;
 
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
 
 }`;
 
@@ -173,4 +178,10 @@ const ServiceGallery = styled.div`
       font-weight: 600;
     }
   }
+
+  @media screen and (max-width: 420px) {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
 `;

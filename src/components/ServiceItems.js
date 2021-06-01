@@ -163,5 +163,17 @@ const Card = styled.div`
   @media screen and (max-width: 700px) {
     width: 50vw;
     height: 50vw;
+
+    &:hover {
+
+      h3 {
+
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding-bottom: 6em;
+      }
+
+    }
+
   }
 `;
