@@ -159,6 +159,14 @@ const FormGroup = styled.div`
     }
   }
 
+  input[type="date"] {
+    display: block;
+
+    /* Solution 1 */
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+  }
+  
   textarea {
     width: 470px;
     max-width: 470px;
@@ -195,8 +203,6 @@ const FormGroup = styled.div`
       width: 80vw;
     }
   }
-
-
 `;
 
 const SubmitButton = styled.button`
@@ -204,16 +210,16 @@ const SubmitButton = styled.button`
   height: 50px;
 
   // margin: -5px 0px 0px 0px;
-  
-  font-family: 'Lato', sans-serif;
+
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
   color: #a6a6a6;
   background: inherit;
   letter-spacing: 1.5px;
-  
-  outline:none;
+
+  outline: none;
   cursor: pointer;
-  
+
   border: solid 1px #a6a6a6;
   border-top: none;
 
@@ -234,5 +240,4 @@ const SubmitButton = styled.button`
     margin: 0;
     padding: 0;
   }
-
 `;

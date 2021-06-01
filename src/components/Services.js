@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../CTAArrow.scss";
 import ServiceItems from "./ServiceItems";
 import HeaderHero from "./HeaderHero";
-import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
+import { AttentionSeeker, Fade } from "react-awesome-reveal";
 import Gallery from "react-grid-gallery";
 import { images } from "./imagesArr";
 
@@ -17,7 +17,7 @@ function Services() {
         slogan={"For events as unique as you"}
       />
       <h1>Services</h1>
-      <p>Click on the service card below to view the gallery!</p>
+      <p>Click on the service to see the photos in the gallery below!</p>
       <ServiceItems clickService={setSelectedService} />
       {selectedService && (
         <ServiceGallery>

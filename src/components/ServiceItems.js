@@ -40,7 +40,7 @@ function ServiceItems(props) {
       ) : (
         <CardContainer>
           <Card>
-            <h3>Make up {`&`} Hair</h3>
+            <h3>Makeup {`&`} Hair</h3>
             <ul>
               <li>Wedding</li>
               <li>Engagement Parties</li>
@@ -111,6 +111,7 @@ const Card = styled.div`
     background-color: white;
     font-weight: 450;
     border-radius: 10px;
+    padding: 0 5px;
   }
 
   ul {

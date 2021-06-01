@@ -34,10 +34,11 @@ const Container = styled.div`
   position: relative;
   margin: 50px auto;
   width: 90vw;
+  color: #212529;
   
   .button {
     padding: 20px 40px;
-    background: #fae0e4;
+    background: #f8edeb;
     border: none;
     position: relative;
     text-transform: uppercase;
@@ -69,7 +70,7 @@ const Container = styled.div`
       }
 
       .contact-link {
-        color: #4a4e69;
+        color: #bc6c25;
 
       }
     }
@@ -79,7 +80,7 @@ const Container = styled.div`
       text-decoration: none;
       position: relative;
       z-index: 1;
-      color: black;
+      color: #6a040f;
       padding: 0px 4px;
       transition: transform 0.2s;
 
