@@ -33,6 +33,11 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
+
+  @media screen and (max-width: 420px) {
+    backgrond-size: contain;
+  }
+
 `;
 
 const HeaderText = styled.div`
