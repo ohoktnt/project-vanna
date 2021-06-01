@@ -89,7 +89,6 @@ function Form() {
           }
         />
         <input
-          required
           type="date"
           name="event_date"
           placeholder="Event Date"
