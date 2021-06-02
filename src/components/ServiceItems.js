@@ -7,7 +7,7 @@ function ServiceItems(props) {
       {props.clickService ? (
         <CardContainer>
           <Card onClick={() => props.clickService("makeup")}>
-            <h3>Make up {`&`} Hair</h3>
+            <h3>Makeup {`&`} Hair</h3>
             <ul>
               <li>Wedding</li>
               <li>Engagement Parties</li>
@@ -149,6 +149,7 @@ const Card = styled.div`
       font-size: 1.5rem;
       font-weight: 600;
       padding-bottom: 5em;
+      margin-top: 0px;
     }
 
     ul {
