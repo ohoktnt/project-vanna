@@ -36,6 +36,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 420px) {
     backgrond-size: 50% auto;
+    background-attachment: scroll;
   }
 
 `;
@@ -44,7 +45,7 @@ const HeaderText = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 3rem;
+  font-size: 3vmin;
 `;
 
 const ArrowContainer = styled.div`
