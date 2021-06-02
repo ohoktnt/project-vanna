@@ -23,6 +23,7 @@ export default HeaderHero;
 const Container = styled.div`
   margin-top: -10px;
   min-height: 35vh;
+  max-height: 35vh;
   background-image: ${(props) => `url("/bannerimgs/${props.headerBg}")`};
   background-size: cover;
   background-attachment: fixed;
@@ -35,8 +36,9 @@ const Container = styled.div`
   color: white;
 
   @media screen and (max-width: 420px) {
-    backgrond-size: 50% auto;
     background-attachment: scroll;
+    min-height: 20vh;
+    max-height: 20vh;
   }
 
 `;
@@ -45,7 +47,7 @@ const HeaderText = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 3vmin;
+  font-size: 5vmin
 `;
 
 const ArrowContainer = styled.div`

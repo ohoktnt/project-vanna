@@ -12,10 +12,10 @@ function Contact() {
   return (
     <Container>
       <HeaderHero headerImg={"party.jpg"} slogan={"Let's Party!"} />
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
       <ContactInfo>
         <Info>
-          <h2>Vanna Makeup Artistry</h2>
+          <h3>Vanna Makeup Artistry</h3>
           <div>
             <span>
               <FontAwesomeIcon icon={faMapMarkerAlt} />  &nbsp;Toronto, ON Canada
@@ -70,10 +70,7 @@ const Container = styled.div`
   h2 {
     margin: 5px;
     font-size: 1.4em;
-  }
-
-  h3 {
-    padding-top: 20px;
+    padding-top: 20px
   }
 `;
 

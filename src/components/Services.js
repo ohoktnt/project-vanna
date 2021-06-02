@@ -16,7 +16,7 @@ function Services() {
         headerImg={"wedding.jpg"}
         slogan={"For events as unique as you"}
       />
-      <h1>Services</h1>
+      <h2>Services</h2>
       <p>Click on the service to see the photos in the gallery below!</p>
       <ServiceItems clickService={setSelectedService} />
       {selectedService && (
