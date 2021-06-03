@@ -243,6 +243,12 @@ export const images = {
       thumbnailWidth: 175,
       thumbnailHeight: 174,
     },
+    {
+      src: "/images/dress14.JPG",
+      thumbnail: "/images/dress14.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+    },
   ],
   deco: [
     {
@@ -466,18 +472,6 @@ export const images = {
     {
       src: "/images/pose1.JPG",
       thumbnail: "/images/pose1.JPG",
-      thumbnailWidth: 150,
-      thumbnailHeight: 174,
-    },
-    {
-      src: "/images/pose2.JPG",
-      thumbnail: "/images/pose2.JPG",
-      thumbnailWidth: 150,
-      thumbnailHeight: 174,
-    },
-    {
-      src: "/images/pose3.JPG",
-      thumbnail: "/images/pose3.JPG",
       thumbnailWidth: 150,
       thumbnailHeight: 174,
     },
