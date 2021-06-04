@@ -12,8 +12,8 @@ function HireBanner() {
           <span>
             <span class="hire-now">Hire now!</span>
             Call me directly at{" "}
-            <a class="contact-link" href="tel:+4161234567">
-              416-123-4567
+            <a class="contact-link" href="tel:+4165389999">
+              416-538-9999
             </a>{" "}
             or email 
             <Link to={`/contact`}>

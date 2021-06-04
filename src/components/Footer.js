@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -51,7 +50,6 @@ function Footer() {
 export default Footer;
 
 const Container = styled.footer`
-  // background: #43464b;
   background: black;
   height: 120px;
   position: absolute;
@@ -59,9 +57,10 @@ const Container = styled.footer`
 
   img {
     height: 100px;
+
     @media screen and (max-width: 900px) {
       // border: 1px solid red;
-      position: absolute; 
+      position: absolute;
       left: 0px;
     }
   }
@@ -70,17 +69,16 @@ const Container = styled.footer`
     font-size: 0.75rem;
     margin: 0;
     color: white;
-  
-    @media screen and (max-width: 900px) {
-      position: relative;
-      top: 100px;
-    }
   }
 
   @media screen and (max-width: 900px) {
     height: 220px;
-  }
 
+    p {
+      position: relative;
+      top: 100px;
+    }
+  }
 `;
 
 const Info = styled.div`
@@ -97,7 +95,6 @@ const NavLinks = styled.nav`
   display: flex;
   flex-grow: 2;
   width: 100%;
-  // padding-right: 65px;
   color: white;
 
   h4 {
@@ -121,13 +118,12 @@ const NavLinks = styled.nav`
     margin: 5px auto;
     position: relative;
     top: 80px;
-    
+
     div {
       display: flex;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
     }
   }
-
 `;
 
 const SocialIcons = styled.div`

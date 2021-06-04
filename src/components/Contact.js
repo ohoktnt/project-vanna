@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
+
+// Components
 import Form from "./Form";
 import HeaderHero from "./HeaderHero";
 
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
@@ -18,11 +21,11 @@ function Contact() {
           <h3>Vanna Makeup Artistry</h3>
           <div>
             <span>
-              <FontAwesomeIcon icon={faMapMarkerAlt} />  &nbsp;Toronto, ON Canada
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> &nbsp;Toronto, ON Canada
             </span>
-            <a href="tel:+4161234567">
+            <a href="tel:+4165389999">
               <FontAwesomeIcon icon={faPhoneAlt} />
-              <span>416-123-4567</span>
+              <span>416-538-9999</span>
             </a>
             <a href="mailto:info@vannamakeup.com">
               <FontAwesomeIcon icon={faEnvelope} />
@@ -70,7 +73,7 @@ const Container = styled.div`
   h2 {
     margin: 5px;
     font-size: 1.4em;
-    padding-top: 20px
+    padding-top: 20px;
   }
 `;
 
@@ -101,11 +104,6 @@ const Info = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding: 5px;
-
-    // a:hover {
-    //   color: grey;
-    //   transform: scale(1.1)
-    // }
 
     a {
       text-decoration: none;
@@ -143,6 +141,7 @@ const Info = styled.div`
 
   @media screen and (max-width: 470px) {
     width: 100vw;
+
     div {
       margin: 0px auto;
     }
@@ -159,27 +158,11 @@ const Social = styled.div`
 `;
 
 const Wrap = styled.div`
-  // border: 1px solid white;
-  // border-radius: 5px;
-  // width: 32px;
-  // height: 32px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // margin: 0px 5px;
-  // cursor: pointer;
-  // transition: font-size 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-
-  // &:hover {
-  //   border: 2px solid white;
-  //   font-size: 1.3em;
-  // }
   display: flex;
   width: 60px;
   height: 60px;
   align-items: center;
   justify-content: center;
-  // box-sizing: border-box;
   margin: 0 10px;
   padding: 6px;
   border-radius: 50%;
@@ -201,7 +184,6 @@ const Wrap = styled.div`
 `;
 
 const IconWrap = styled.div`
-// border: 1px solid red;
   width: 100%;
   height: 100%;
   display: flex;

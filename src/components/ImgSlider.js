@@ -31,7 +31,7 @@ function ImgSlider() {
           <img src="./bannerimgs/party.jpg" />
         </Wrap>
         <Wrap>
-          <img src="/banner-temp1.jpg" />
+          <img src="/bannerimgs/wedding.jpg" />
         </Wrap>
       </Carousel>
       <HeaderText>

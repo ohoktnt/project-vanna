@@ -36,9 +36,14 @@ const Container = styled.div`
   color: white;
 
   @media screen and (max-width: 420px) {
-    background-attachment: scroll;
+    // background-attachment: scroll;
     min-height: 20vh;
     max-height: 20vh;
+  }
+
+  /* CSS specific to iOS devices */ 
+  @supports (-webkit-touch-callout: none) {
+    background-attachment: scroll;
   }
 
 `;

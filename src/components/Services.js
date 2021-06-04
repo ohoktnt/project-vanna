@@ -63,8 +63,8 @@ function Services() {
         <img src="/servicesImgs/service3.jpg" alt="" />
         <img src="/servicesImgs/service9.jpg" alt="" />
         <img src="/servicesImgs/service8.jpg" alt="" />
-        <img src="/servicesImgs/service5.jpg" alt="" />
         <img src="/servicesImgs/service2.jpg" alt="" />
+        <img src="/servicesImgs/service5.jpg" alt="" />
         <img src="/servicesImgs/service7.jpg" alt="" />
         <img src="/servicesImgs/service4.jpg" alt="" />
       </RhombGallery>
