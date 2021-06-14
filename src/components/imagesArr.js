@@ -314,11 +314,11 @@ export const images = {
       alt: "Vanna artistry decorations flowers"
     },
     {
-      src: "/images/deco4.JPG",
-      thumbnail: "/images/deco4.JPG",
-      thumbnailWidth: 250,
+      src: "/images/deco4.jpg",
+      thumbnail: "/images/deco4.jpg",
+      thumbnailWidth: 150,
       thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
+      alt: "Vanna artistry decorations flowers"
     },
     {
       src: "/images/deco5.JPG",
@@ -330,87 +330,80 @@ export const images = {
     {
       src: "/images/deco6.JPG",
       thumbnail: "/images/deco6.JPG",
-      thumbnailWidth: 175,
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
       alt: "Vanna artistry decorations flowers backdrop wedding"
     },
     {
       src: "/images/deco7.JPG",
       thumbnail: "/images/deco7.JPG",
-      thumbnailWidth: 150,
+      thumbnailWidth: 130,
       thumbnailHeight: 174,
       alt: "Vanna artistry decorations flowers backdrop wedding"
     },
     {
       src: "/images/deco8.jpg",
       thumbnail: "/images/deco8.jpg",
-      thumbnailWidth: 150,
-      thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
-    },
-    {
-      src: "/images/deco9.jpg",
-      thumbnail: "/images/deco9.jpg",
-      thumbnailWidth: 125,
-      thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
-    },
-    {
-      src: "/images/deco10.jpg",
-      thumbnail: "/images/deco10.jpg",
-      thumbnailWidth: 125,
-      thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
-    },
-    {
-      src: "/images/deco11.jpg",
-      thumbnail: "/images/deco11.jpg",
-      thumbnailWidth: 210,
-      thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
-    },
-    {
-      src: "/images/deco12.jpg",
-      thumbnail: "/images/deco12.jpg",
-      thumbnailWidth: 150,
-      thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
-    },
-    {
-      src: "/images/deco13.jpg",
-      thumbnail: "/images/deco13.jpg",
-      thumbnailWidth: 150,
-      thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
-    },
-    {
-      src: "/images/deco14.jpg",
-      thumbnail: "/images/deco14.jpg",
       thumbnailWidth: 130,
       thumbnailHeight: 174,
       alt: "Vanna artistry decorations flowers backdrop wedding"
     },
     {
-      src: "/images/deco15.jpg",
-      thumbnail: "/images/deco15.jpg",
-      thumbnailWidth: 190,
+      src: "/images/deco9.JPG",
+      thumbnail: "/images/deco9.JPG",
+      thumbnailWidth: 130,
       thumbnailHeight: 174,
       alt: "Vanna artistry decorations flowers backdrop wedding"
     },
     {
-      src: "/images/deco16.jpg",
-      thumbnail: "/images/deco16.jpg",
-      thumbnailWidth: 150,
+      src: "/images/deco10.JPG",
+      thumbnail: "/images/deco10.JPG",
+      thumbnailWidth: 250,
       thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers backdrop wedding"
+      alt: "Vanna artistry decorations flowers backdrop table setting wedding"
     },
     {
-      src: "/images/deco17.jpg",
-      thumbnail: "/images/deco17.jpg",
-      thumbnailWidth: 150,
+      src: "/images/deco11.jpg",
+      thumbnail: "/images/deco11.jpg",
+      thumbnailWidth: 130,
       thumbnailHeight: 174,
-      alt: "Vanna artistry decorations flowers"
+      alt: "Vanna artistry decorations flowers backdrop table setting wedding"
     },
+    {
+      src: "/images/deco12.jpg",
+      thumbnail: "/images/deco12.jpg",
+      thumbnailWidth: 250,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry decorations flowers backdrop table setting wedding"
+    },
+    {
+      src: "/images/deco13.JPG",
+      thumbnail: "/images/deco13.JPG",
+      thumbnailWidth: 130,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry decorations flowers backdrop balloons birthday"
+    },
+    {
+      src: "/images/deco14.JPG",
+      thumbnail: "/images/deco14.JPG",
+      thumbnailWidth: 130,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry decorations flowers backdrop balloons birthday"
+    },
+    {
+      src: "/images/deco15.jpeg",
+      thumbnail: "/images/deco15.jpeg",
+      thumbnailWidth: 130,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry decorations flowers table decoration wedding"
+    },
+    // {
+    //   src: "/images/deco16.jpg",
+    //   thumbnail: "/images/deco16.jpg",
+    //   thumbnailWidth: 150,
+    //   thumbnailHeight: 174,
+    //   alt: "Vanna artistry decorations flowers backdrop wedding"
+    // },
   ],
   about: [
     {
