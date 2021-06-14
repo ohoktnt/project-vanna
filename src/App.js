@@ -13,10 +13,10 @@ import ScrollToTop from "./ScrollToTop";
 
 import { ToastContainer } from "react-toastify";
 // mulitpage set up
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Icons
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faArrowAltCircleUp,  faEnvelope } from "@fortawesome/free-solid-svg-icons";

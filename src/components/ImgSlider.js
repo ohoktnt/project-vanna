@@ -22,16 +22,16 @@ function ImgSlider() {
     <Container>
       <Carousel {...settings}>
         <Wrap>
-          <img src="./bannerimgs/homeheader1.jpg" />
+          <img src="./bannerimgs/homeheader1.jpg" alt="Vanna makeup artistry hair model"/>
         </Wrap>
         <Wrap>
-          <img src="./bannerimgs/makeup.jpg" />
+          <img src="./bannerimgs/makeup.jpg" alt="Vanna makeup and hair artistry"/>
         </Wrap>
         <Wrap>
-          <img src="./bannerimgs/party.jpg" />
+          <img src="./bannerimgs/party.jpg" alt="Vanna makeup artistry decorations"/>
         </Wrap>
         <Wrap>
-          <img src="/bannerimgs/wedding.jpg" />
+          <img src="/bannerimgs/wedding.jpg" alt="Vanna makeup artistry wedding"/>
         </Wrap>
       </Carousel>
       <HeaderText>
@@ -48,7 +48,6 @@ export default ImgSlider;
 
 const Container = styled.div`
   position: relative;
-  // border: 1px solid red;
 `;
 
 const HeaderText = styled.div`
@@ -62,8 +61,6 @@ const HeaderText = styled.div`
   justify-content: space-between;
   height: 80%;
   width: 100%;
-  // padding: 0px 50vw;
-  // margin: 0 25vw;
   font-size: 3vmin;
   
   h1 {

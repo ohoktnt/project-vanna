@@ -34,14 +34,14 @@ function Contact() {
           </div>
         </Info>
         <Social>
-          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
+          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank" rel="noreferrer">
             <Wrap>
               <IconWrap id="ig-icon">
                 <FontAwesomeIcon icon={["fab", "instagram"]} />
               </IconWrap>
             </Wrap>
           </a>
-          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank">
+          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank" rel="noreferrer">
             <Wrap>
               <IconWrap id="fb-icon">
                 <FontAwesomeIcon icon={["fab", "facebook"]} />

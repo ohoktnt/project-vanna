@@ -14,7 +14,7 @@ function ServiceItems(props) {
               <li>Birthday</li>
               <li>Special Events</li>
             </ul>
-            <img src="/servicesImgs/service-card2.jpg" />
+            <img src="/servicesImgs/service-card2.jpg" alt="service card for Makeup and Hair"/>
           </Card>
           <Card onClick={() => props.clickService("dress")}>
             <h3>Dress Rentals</h3>
@@ -24,7 +24,7 @@ function ServiceItems(props) {
               <li>Evening Gowns</li>
               <li>Adjustments Included</li>
             </ul>
-            <img src="/servicesImgs/service-card3.jpg" />
+            <img src="/servicesImgs/service-card3.jpg" alt="service card for Dress Rentals" />
           </Card>
           <Card onClick={() => props.clickService("deco")}>
             <h3>Decorations</h3>
@@ -34,7 +34,7 @@ function ServiceItems(props) {
               <li>Backdrops</li>
               <li>Lighting</li>
             </ul>
-            <img src="/servicesImgs/service-card1.jpg" />
+            <img src="/servicesImgs/service-card1.jpg" alt="service card for Decorations" />
           </Card>
         </CardContainer>
       ) : (
@@ -47,7 +47,7 @@ function ServiceItems(props) {
               <li>Birthday</li>
               <li>Special Events</li>
             </ul>
-            <img src="/servicesImgs/service-card2.jpg" />
+            <img src="/servicesImgs/service-card2.jpg" alt="service card for Makeup and Hair"/>
           </Card>
           <Card>
             <h3>Dress Rentals</h3>
@@ -57,7 +57,7 @@ function ServiceItems(props) {
               <li>Evening Gowns</li>
               <li>Adjustments Included</li>
             </ul>
-            <img src="/servicesImgs/service-card3.jpg" />
+            <img src="/servicesImgs/service-card3.jpg" alt="service card for Dress Rentals"/>
           </Card>
           <Card>
             <h3>Decorations</h3>
@@ -67,7 +67,7 @@ function ServiceItems(props) {
               <li>Backdrops</li>
               <li>Lighting</li>
             </ul>
-            <img src="/servicesImgs/service-card1.jpg" />
+            <img src="/servicesImgs/service-card1.jpg" alt="service card for Decorations"/>
           </Card>
         </CardContainer>
       )}

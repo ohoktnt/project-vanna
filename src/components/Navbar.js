@@ -7,12 +7,12 @@ function Navbar() {
   return (
     <Nav>
       <SocialIcons>
-          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
+          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank" rel="noreferrer">
         <Wrap>
             <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
         </Wrap>
           </a>
-          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank">
+          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank" rel="noreferrer">
         <Wrap>
             <FontAwesomeIcon icon={["fab", "facebook-f"]} size="lg"/>
         </Wrap>

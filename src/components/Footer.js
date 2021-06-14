@@ -8,14 +8,14 @@ function Footer() {
   return (
     <Container>
       <Info>
-        <img src="/logoVsized.png" />
+        <img src="/logoVsized.png" alt="logo in footer"/>
         <SocialIcons>
-          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank">
+          <a href="https://www.instagram.com/makeupby_vanna/" target="_blank" rel="noreferrer">
             <Wrap>
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </Wrap>
           </a>
-          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank">
+          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank" rel="noreferrer">
             <Wrap>
               <FontAwesomeIcon icon={["fab", "facebook-f"]} />
             </Wrap>

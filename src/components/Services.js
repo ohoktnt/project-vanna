@@ -32,7 +32,7 @@ function Services() {
         </ServiceGallery>
       )}
       <Fade>
-        <img id="menu" src="Menu.png" />
+        <img id="menu" src="Menu.png" alt="service menu for makeup hair dress rentals and decorations"/>
         <p>* Price available upon request</p>
       </Fade>
       <BookContainer>
@@ -57,16 +57,16 @@ function Services() {
         </Link>
       </BookContainer>
       <RhombGallery>
-        <img src="/images/pose1.JPG" alt="" />
-        <img src="/servicesImgs/service6.jpg" alt="" />
-        <img src="/servicesImgs/service1.jpg" alt="" />
-        <img src="/servicesImgs/service3.jpg" alt="" />
-        <img src="/servicesImgs/service9.jpg" alt="" />
-        <img src="/servicesImgs/service8.jpg" alt="" />
-        <img src="/servicesImgs/service2.jpg" alt="" />
-        <img src="/servicesImgs/service5.jpg" alt="" />
-        <img src="/servicesImgs/service7.jpg" alt="" />
-        <img src="/servicesImgs/service4.jpg" alt="" />
+        <img src="/images/pose1.JPG" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service6.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service1.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service3.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service9.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service8.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service2.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service5.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service7.jpg" alt="vanna makeup hair artistry model" />
+        <img src="/servicesImgs/service4.jpg" alt="vanna makeup hair artistry model" />
       </RhombGallery>
     </Container>
   );
