@@ -41,7 +41,7 @@ function Contact() {
               </IconWrap>
             </Wrap>
           </a>
-          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/vanna.artistry" target="_blank" rel="noreferrer">
             <Wrap>
               <IconWrap id="fb-icon">
                 <FontAwesomeIcon icon={["fab", "facebook"]} />

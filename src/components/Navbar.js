@@ -12,7 +12,7 @@ function Navbar() {
             <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
         </Wrap>
           </a>
-          <a href="https://www.facebook.com/van.nguyen.796569" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/vanna.artistry" target="_blank" rel="noreferrer">
         <Wrap>
             <FontAwesomeIcon icon={["fab", "facebook-f"]} size="lg"/>
         </Wrap>

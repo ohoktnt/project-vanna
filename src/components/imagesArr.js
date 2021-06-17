@@ -93,6 +93,13 @@ export const images = {
       alt: "Vanna artistry makeup",
     },
     {
+      src: "/images/makeup25.JPG",
+      thumbnail: "/images/makeup25.JPG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry makeup",
+    },
+    {
       src: "/images/makeup11.JPG",
       thumbnail: "/images/makeup11.JPG",
       thumbnailWidth: 150,
@@ -311,6 +318,49 @@ export const images = {
       thumbnailHeight: 174,
       alt: "Vanna artistry wedding dress rental",
     },
+    {
+      src: "/images/dress15.PNG",
+      thumbnail: "/images/dress15.PNG",
+      thumbnailWidth: 275,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },    {
+      src: "/images/dress16.PNG",
+      thumbnail: "/images/dress16.PNG",
+      thumbnailWidth: 130,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },    {
+      src: "/images/dress17.jpg",
+      thumbnail: "/images/dress17.jpg",
+      thumbnailWidth: 180,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },    {
+      src: "/images/dress18.PNG",
+      thumbnail: "/images/dress18.PNG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },    {
+      src: "/images/dress19.PNG",
+      thumbnail: "/images/dress19.PNG",
+      thumbnailWidth: 120,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },    {
+      src: "/images/dress20.PNG",
+      thumbnail: "/images/dress20.PNG",
+      thumbnailWidth: 150,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },    {
+      src: "/images/dress21.PNG",
+      thumbnail: "/images/dress21.PNG",
+      thumbnailWidth: 275,
+      thumbnailHeight: 174,
+      alt: "Vanna artistry wedding dress rental",
+    },
   ],
   deco: [
     {
@@ -412,8 +462,8 @@ export const images = {
       alt: "Vanna artistry decorations flowers backdrop balloons birthday",
     },
     {
-      src: "/images/deco15.jpeg",
-      thumbnail: "/images/deco15.jpeg",
+      src: "/images/deco15.JPG",
+      thumbnail: "/images/deco15.JPG",
       thumbnailWidth: 130,
       thumbnailHeight: 174,
       alt: "Vanna artistry decorations flowers table decoration wedding",
